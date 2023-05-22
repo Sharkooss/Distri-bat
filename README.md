@@ -1,3 +1,0 @@
-# Distri-bat
-
-allah
