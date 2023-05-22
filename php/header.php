@@ -12,3 +12,9 @@
         </div>
     </div>
 </div>
+<div class="banniere-block">
+    <div class="banniere-texte">
+        <div class="banniere-titre">DISTRI-BAT sinistres</div>
+        <div class="banniere-soustitre">Isolation - peinture - facade</div>
+    </div>
+</div>
