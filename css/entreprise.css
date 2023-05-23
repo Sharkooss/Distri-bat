@@ -1,0 +1,116 @@
+@font-face {
+	font-family: 'annapolis';
+	src: url('/police/Annapolis.ttf') format('truetype');
+}
+body{
+    margin: 0;
+}
+
+/*========== BANNIERE ===========*/
+
+.banniere-block{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1400px;
+    background: #13A9DD;
+}
+
+.banniere-texte{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 175px;
+    left: 25%;
+    width: 50%;
+    height: 100px;
+    color: aliceblue;
+    font-family: 'annapolis';    
+}
+
+.banniere-titre{
+    font-weight: initial;
+    font-size: 40px;    
+}
+
+.containerentreprise{
+    padding: 3%;
+    position: relative;
+    display: block;
+    height: 1700px;
+    width: 87%;
+    left: 1%;
+    top: 310px;
+    background-color: #D8EBF0;
+    border-radius: 100px;
+    border: solid 44px white;
+}
+
+.historique{
+    display: flex;
+    height: 25%;
+    width: 100%;
+}
+
+.imghistorique{
+    position: absolute;
+    left: 7%;
+    width: 40%;
+    height: 425px;
+}
+
+.parahistorique{
+    position: relative;
+    width: 172px;
+    height: 425px;
+    transform: skew(-20deg);
+    background: #373B4D;
+    left: 40%;
+}
+
+.equipe{
+
+    height: 25%;
+    width: 100%;
+}
+
+.paraequipe{
+    position: relative;
+    width: 165px;
+    height: 425px;
+    transform: skew(-20deg);
+    background: #373B4D;
+    left: 41%;
+}
+
+.choisir{
+
+    height: 25%;
+    width: 100%;
+}
+
+.parachoisir{
+    position: relative;
+    width: 165px;
+    height: 425px;
+    transform: skew(20deg);
+    background: #373B4D;
+    left: 41%;
+}
+
+.certification{
+
+    height: 25%;
+    width: 100%;
+}
+
+.paracertification{
+    position: relative;
+    width: 172px;
+    height: 425px;
+    transform: skew(20deg);
+    background: #373B4D;
+    left: 40%;
+}
