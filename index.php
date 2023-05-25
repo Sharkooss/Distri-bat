@@ -112,6 +112,50 @@
         </div>
     </div>
 
+    <div class="priorite-container">
+        <div class="priorite-title">Les priorités de Distri-Bat</div>
+        <div class="priorite-block-content">
+            <div class="priorite-block-textG">
+                <div class="priorite-block-title">formation des équipes</div>
+                <div class="priorite-block-textGa">
+                    <p>
+                    Afin de renouveler en permanence nos compétences et répondre aux problématiques 
+                    variées de nos clients, <b>DISTRI-BAT SINISTRES</b> est engagée dans une <b>politique constante</b>
+                    de formation de ses équipes. Qualification RGE, travail en hauteur, notre équipe prend
+                    régulièrement part à des formations en interne lui permettant ainsi de vous proposer
+                    des prestations et un <b>travail de grande qualité</b>.
+                    </p>
+                </div>
+            </div>            
+            <div class="priorite-block-textD">
+                <div class="priorite-block-title">L’exigence de la satisfaction</div>
+                <div class="priorite-block-textDo">
+                    <p>
+                    Entreprise à <b>taille humaine</b>, DISTRI-BAT SINISTRES s’attache à proposer à l’ensemble 
+                    de ses clients et partenaires un <b>service irréprochable</b>. Nos corps de métiers s’attelant 
+                    aussi bien à des <b>chantiers post sinistres</b> (traitement de fissures, ravalement de façades) 
+                    qu’à des <b>projets de rénovation</b> (Isolation Thermique par l’Extérieur, travaux d’embellissement 
+                    intérieur et décoration de l’habitat), nos équipes sont formées pour donner vie à vos 
+                    projets dans <b>le respect des règles éthiques du bâtiment</b>. Les relations humaines sont au centre 
+                    de nos échanges, c’est pour cela que la <b>réactivité</b> et la <b>sélection des matériaux de qualité</b> 
+                    font partie intégrante de la mise en application des <b>processus de rénovation / réhabilitation</b>, 
+                    toujours en conformité avec le DTU.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="transi-conseil-container">
+        <div class="transi-conseil-text">
+            <p>
+            Visite, conseil et devis personnalisé <span class="bleu">gratuit et sans engagement</span> Accompagnement en continu durant les travaux 
+            Qualification <span class="bleu">RGE QUALIBAT</span> 2020, 2021, 2022 Garantie décennale.
+            </p>
+        </div>
+        <div class="transi-conseil-check"><img src="/photo/logo/check.png" alt=""></div>
+    </div>
+
 
     
 </body>

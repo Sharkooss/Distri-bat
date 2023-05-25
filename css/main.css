@@ -340,8 +340,7 @@ body{
     justify-content: space-around;
     width: 100%;
     height: 400px;
-    background-color: #373b4d;
-    
+    background-color: #373b4d;    
     font-style: italic;
     font-weight: bold;
 }
@@ -406,4 +405,128 @@ body{
 }
 
 
+/*================= LES PRIORITE DE SITRIBAT =======================*/
+
+.priorite-container{
+    z-index: 90;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 550px;
+    width: 93%;
+    left: 1%;
+    top: -70px;
+    background-color: #D8EBF0;
+    border-radius: 100px;
+    border: solid 44px white;
+}
+
+.priorite-title{
+    width: auto;
+    height: 30px;
+    color: #373b4d;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "annapolis";
+}
+
+.priorite-block-content{
+    width: 90%;
+    height: 450px;
+    display: flex;
+
+}
+
+.priorite-block-textG{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    border-right: 3px solid #373b4d;
+}
+
+.priorite-block-textD{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+.priorite-block-title{
+    color: #373b4d;
+    font-family: "annapolis";
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.priorite-block-textDo,
+.priorite-block-textGa{
+    text-align: center;
+    padding: 15px;
+    width: 90%;
+    height: 400px;
+    margin-top: 15px;
+    color: #373b4d;
+    font-family: "inter", sans-serif;
+    font-weight: 100;
+}
+
+.priorite-block-textGa{    
+    line-height: 40px;    
+    font-size: 23px;
+}
+
+.priorite-block-textDo{     
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.priorite-block-textD{
+    position: relative;
+    height: 100%;
+    width: 50%;    
+}
+
+/*==================== TRANSITION CONSEIL =========================*/
+
+.transi-conseil-container{
+    position: relative;
+    top: -150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 400px;
+    background-color: #373b4d;    
+    font-style: italic;
+    font-weight: bold;
+}
+
+.transi-conseil-check img{
+    padding-right: 400px;
+    margin-top: 100px;
+    height: 80px;
+    width: 100px;
+}
+
+.transi-conseil-text{
+    padding-left: 200px;
+    color: aliceblue;
+    font-family: "inter", sans-serif;
+    font-size: 25px;
+    line-height: 40px;
+    width: 70%;
+    text-align: center;
+}
 
