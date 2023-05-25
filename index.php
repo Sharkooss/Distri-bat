@@ -156,6 +156,25 @@
         <div class="transi-conseil-check"><img src="/photo/logo/check.png" alt=""></div>
     </div>
 
+    <div class="gerant-container">
+        <div class="gerant-element">
+            <div class="gerant-logo"><img src="/photo/logo/gerantlogo.jpg" alt=""></div>
+            <div class="gerant-quote"><img src="/photo/quote.png" alt=""></div>
+            <div class="gerant-texte-block">
+                <div class="gerant-title"><h2>Le mot du gérant</h2></div>
+                <div class="gerant-texte">
+                    <p>
+                    Dans un contexte social compliqué où les relations humaines sont absorbées par les réseaux sociaux, outils informatiques,
+                    emails, répondeurs téléphoniques, <b>le contact humain reste fondamental</b>. Mon parcours professionnel durant ces 30 dernières
+                    années m’a permis d’acquérir des compétences et la maturité nécessaire pour créer mon entreprise. De nombreuses formations
+                    chez les leaders du marché (Maison Du Sol – Tollens – STO) m'ont apporté des <b>valeurs indispensables</b> que je transmets
+                    au quotidien à mes équipes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     
 </body>
