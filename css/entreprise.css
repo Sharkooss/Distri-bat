@@ -1,0 +1,425 @@
+@font-face {
+	font-family: 'annapolis';
+	src: url('/police/Annapolis.ttf') format('truetype');
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
+
+body{
+    margin: 0;
+}
+
+/*========== BANNIERE ===========*/
+
+.banniere-block{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 2315px;
+    background: #13A9DD;
+}
+
+.banniere-texte{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 175px;
+    left: 25%;
+    width: 50%;
+    height: 100px;
+    color: aliceblue;
+    font-family: 'annapolis';    
+}
+
+.banniere-titre{
+    font-weight: initial;
+    font-size: 40px;    
+}
+
+.containerentreprise{
+    padding: 3%;
+    z-index: 1;
+    position: relative;
+    display: block;
+    height: 1900px;
+    width: 87.5%;
+    left: 1%;
+    top: 310px;
+    background-color: #D8EBF0;
+    border-radius: 100px;
+    border: solid 44px white;
+}
+
+.bleu{
+    color: #13A9DD;
+}
+
+/*============================== HISTORIQUE ==============================*/
+
+.historique{
+    display: flex;
+    height: 25%;
+    width: 100%;
+}
+
+.imghistorique{
+    position: absolute;
+    left: 6%;
+    width: 45%;
+    height: 475px;
+    border-radius: 10px;
+}
+
+.historiquetextecontainer{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    left: 62%;
+    top: 17%;
+    height: 55%;
+    width: 35%;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+}
+
+.historiquetitre{
+    color: #13A9DD;
+    text-decoration-line: underline;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.historiquetexte{
+    font-size: 25px;
+}
+
+.parahistorique{
+    position: absolute;
+    width: 190px;
+    height: 475px;
+    transform: skew(-20deg);
+    background: #373B4D;
+    left: 45%;
+}
+
+/*============================== EQUIPE ==============================*/
+
+.equipe{
+    display: flex;
+    height: 25%;
+    width: 100%;
+}
+
+.equipetextecontainer{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    left: 5%;
+    top: 7%;
+    height: 80%;
+    width: 35%;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+}
+
+.equipetitre{
+    color: #13A9DD;
+    text-decoration-line: underline;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.equipetexte{
+    font-size: 25px;
+}
+
+.paraequipe{
+    position: absolute;
+    width: 185px;
+    height: 475px;
+    transform: skew(-20deg);
+    background: #373B4D;
+    left: 46%;
+}
+
+/*============================== CHOISIR ==============================*/
+
+.choisir{
+    display: flex;
+    height: 25%;
+    width: 100%;
+}
+
+.choisirlogodistribatcontainer{
+    position: relative;
+    background: white;
+    height: 100%;
+    width: 50%;
+    border-radius: 20px;
+    left: 2%;
+}
+
+.choisirlogodistribat{
+    position: relative;
+    top: 17%;
+    left: 5%;
+    width: 80%;
+    height: 65%;
+}
+
+.parachoisir{
+    position: absolute;
+    width: 185px;
+    height: 475px;
+    transform: skew(20deg);
+    background: #373B4D;
+    left: 46%;
+}
+
+.choisirtextecontainer{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    left: 10%;
+    top: 5%;
+    height: 85%;
+    width: 40%;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+}
+
+.choisirtitre{
+    color: #13A9DD;
+    text-decoration-line: underline;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.choisirtexte{
+    font-size: 24px;
+    text-align: left;
+    width: 92%;
+}
+
+/*============================== CERTIFICATION ==============================*/
+
+.certification{
+    display: flex;
+    height: 25%;
+    width: 100%;
+}
+
+.certificationtextecontainer{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    left: 2%;
+    top: 5%;
+    height: 85%;
+    width: 38%;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+}
+
+.certificationtitre{
+    color: #13A9DD;
+    text-decoration-line: underline;
+    font-size: 49px;
+    font-weight: bold;
+}
+
+.certificationtexte{
+    font-size: 23px;
+    width: 92%;
+}
+
+.paracertification{
+    position: absolute;
+    width: 190px;
+    height: 475px;
+    transform: skew(20deg);
+    background: #373B4D;
+    left: 45%;
+}
+
+.certificationlogodistribatcontainer{
+    position: relative;
+    background: white;
+    height: 100%;
+    width: 48%;
+    border-radius: 20px;
+    left: 12%;
+}
+
+.certificationlogoRGE{
+    position: relative;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    height: 70%;
+}
+
+/*============================== RGE ==============================*/
+
+.RGEcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    display: block;
+    height: 1050px;
+    width: 100%;
+    top: 210px;
+    background-color: #373B4D;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.RGEtitre{
+    position: relative;
+    top: 13%;
+    color: aliceblue;
+    font-size: 50px;
+}
+
+.RGErectangle{
+    position: relative;
+    width: 40%;
+    height: 2%;
+    background: #13A9DD;
+    top: 17%;
+    left: 29.5%;
+}
+
+.RGEcasescontainer{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    left: 4.5%;
+    top: 28%;
+    width: 90%;
+    height: 65%;
+}
+
+.RGEcases{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 20px;
+    width: 30%;
+    height: 70%;
+    background: #13A9DD;
+}
+
+.RGEcasestexte{
+    position: relative;
+    font-size: 175%;
+    font-weight: bold;
+    font-style: italic;
+    color: aliceblue;
+    margin: 50px;
+    text-align: center;
+}
+
+/*============================== REJOINDRE ==============================*/
+
+.rejoindrebg{
+    position: absolute;
+    background: #D8EBF0;
+    top: 3350px;
+    width: 100%;
+    height: 600px;
+}
+
+.rejoindrecontainer{
+    padding: 3%;
+    position: relative;
+    display: block;
+    height: 600px;
+    width: 87.5%;
+    left: 1%;
+    top: 100px;
+    background-color: #D8EBF0;
+    border-radius: 100px;
+    border: solid 44px white;
+}
+
+.rejoindre{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.imgrejoindre{
+    position: absolute;
+    left: 5.75%;
+    width: 46%;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.rejoindretextecontainer{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    left: 62%;
+    top: 4%;
+    height: 90%;
+    width: 35%;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+}
+
+.rejoindretitre{
+    color: #13A9DD;
+    text-decoration-line: underline;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.rejoindretexte{
+    font-size: 25px;
+}
+
+.pararejoindre{
+    position: absolute;
+    width: 230px;
+    height: 600px;
+    transform: skew(-15deg);
+    background: #373B4D;
+    left: 45%;
+}
+
+.rejoindrebouton{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 50px;
+    background: #13A9DD;
+    color: aliceblue;
+    font-size: 20px;
+    border-radius: 10px;
+
+}
