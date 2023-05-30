@@ -2,8 +2,8 @@ body{
     margin: 0;
 }
 
-footer{
-    position: absolute;
+.footer{
+    position: relative;
     display: flex;  
     bottom: 0px;
     width: 100%;
