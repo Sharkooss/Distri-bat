@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/header.css">    
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script> 
+    <script src="js/index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Distri-Bat</title>
 </head>
@@ -14,6 +16,7 @@
 <?php include 'php\header.php'; ?>    
 </header>      
 <body>
+
     <div class="presentation-container">
         <div class="presentation-flex">
             <div class="presentation-block-gris">
@@ -37,16 +40,20 @@
             </div>
         </div>
     </div>
-    <div class="index-caroussel">
-        <div class="slider">
-            <div class="slides">
-                <div class="slide"><img src="/photo/frontignan.jpg" alt=""></div>
-                <div class="slide"><img src="/photo/facadei3.jpg" alt=""></div>
-                <div class="slide"><img src="/photo/interieurlattes.jpg" alt=""></div>
 
-            </div>
+    <div class="index-caroussel">
+        <div class="container-caroussel">
+        </div>
+        <div class="parallelogram">
+            <div class="parallelogram-block-texte"><p>ouvriers qualifiers</p></div>
+            <div class="separateur"></div>
+            <div class="parallelogram-block-texte"><p>materiaux de qualité</p></div>
+            <div class="separateur"></div>
+            <div class="parallelogram-block-texte">Qualification RGE QUALIBAT</div>
+            <div class="separateur"></div>
         </div>
     </div>
+
     <div class="prestation-container">
         <div class="prestation-title"><u>Nos Prestations</u></div>
         <div class="prestations-block">            
@@ -158,7 +165,7 @@
 
     <div class="gerant-container">
         <div class="gerant-element">
-            <div class="gerant-logo"><img src="/photo/logo/gerantlogo.jpg" alt=""></div>
+            <div class="gerant-logo"><img src="/photo/logo/gerantlogo.jpg" alt="image"></div>
             <div class="gerant-quote"><img src="/photo/quote.png" alt=""></div>
             <div class="gerant-texte-block">
                 <div class="gerant-title"><h2>Le mot du gérant</h2></div>
@@ -174,9 +181,6 @@
             </div>
         </div>
     </div>
-
-
-    
 </body>
 <!-- <?php include 'php\footer.php'; ?> -->
 </html>
