@@ -18,29 +18,7 @@
 </header>      
 <body>
 
-    <div class="presentation-container">
-        <div class="presentation-flex">
-            <div class="presentation-block-gris">
-                <div class="block-gris">Ravalement de facades</div>
-                <div class="block-gris">isolation thermique <br>par l’exterieur</div>
-                <div class="block-gris">Rénovation embelissement interieur/exterieur</div>
-            </div>
-            <div class="presentation-texte1">
-            Spécialisée dans les travaux de <b>rénovation de façades</b> depuis plus de 30 ans, notre entreprise dispose
-            d'un panel de savoir-faire pour vous accompagner en continu durant vos <b>travaux de rénovation.</b> 
-            Notre objectif ? Vous apporter notre expertise afin de vous proposer une offre, des <b>conseils personnalisés</b>
-            répondant à vos besoins. <b>DISTRI-BAT SINISTRES</b> est implantée dans la zone industrielle de Gigean et nos équipes 
-            interviennent sur tous les départements du Languedoc-Roussillon.
-            </div>
-            <div class="presentation-texte2">
-            Rénovation de façades <a class="b">//</a> Traitement de fissures <a class="b">//</a> Isolation thermique par 
-            l'extérieur (ITE) <a class="b">//</a> Travaux intérieurs (peinture, papier-peint, décoration, carrelage et revêtement de sol) ...
-            </div>
-            <div class="presentation-boutton-devis">
-                <div class="button-devis">Demander Un Devis</div>
-            </div>
-        </div>
-    </div>
+    
 
     <div class="index-caroussel">
         <div class="container-caroussel">
@@ -97,6 +75,30 @@
                     <p>Nos différents corps de métier nous permettent d'intervenir dans <b>l'amélioration de votre habitat et projets de décoration</b></p>
                 </div>
             </div>          
+        </div>
+    </div>
+
+    <div class="presentation-container">
+        <div class="presentation-flex">
+            <div class="presentation-block-gris">
+                <div class="block-gris">Ravalement de facades</div>
+                <div class="block-gris">isolation thermique <br>par l’exterieur</div>
+                <div class="block-gris">Rénovation embelissement interieur/exterieur</div>
+            </div>
+            <div class="presentation-texte1">
+            Spécialisée dans les travaux de <b>rénovation de façades</b> depuis plus de 30 ans, notre entreprise dispose
+            d'un panel de savoir-faire pour vous accompagner en continu durant vos <b>travaux de rénovation.</b> 
+            Notre objectif ? Vous apporter notre expertise afin de vous proposer une offre, des <b>conseils personnalisés</b>
+            répondant à vos besoins. <b>DISTRI-BAT SINISTRES</b> est implantée dans la zone industrielle de Gigean et nos équipes 
+            interviennent sur tous les départements du Languedoc-Roussillon.
+            </div>
+            <div class="presentation-texte2">
+            Rénovation de façades <a class="b">//</a> Traitement de fissures <a class="b">//</a> Isolation thermique par 
+            l'extérieur (ITE) <a class="b">//</a> Travaux intérieurs (peinture, papier-peint, décoration, carrelage et revêtement de sol) ...
+            </div>
+            <div class="presentation-boutton-devis">
+                <div class="button-devis">Demander Un Devis</div>
+            </div>
         </div>
     </div>
 
