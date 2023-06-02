@@ -43,7 +43,7 @@
 
 
             <ul class="slides-container" id="slides-container">
-                <li class="slide"><img src="\photo\entreprise\car-1.jpg" alt="f0" class='fcaroussel'></li>
+                <li class="slide"><img src="\photo\entreprise\car-1.jpg" alt="f0" class='fcaroussel' ></li>
                 <li class="slide"><img src="\photo\entreprise\car-2.jpg" alt="f1" class='fcaroussel'></li>
                 <li class="slide"><img src="\photo\entreprise\car-3.jpg" alt="f2" class='fcaroussel'></li>
                 <li class="slide"><img src="\photo\entreprise\car-4.jpg" alt="f3" class='fcaroussel'></li>
@@ -117,8 +117,7 @@
     </div>
 </div>
 <div class="rejoindrebg">
-</div>
-<div class="rejoindrecontainer">
+    <div class="rejoindrecontainer">
 
 
     <div class="rejoindre">
@@ -146,12 +145,19 @@
 
                 
             </div>
+
         </div>
     </div>
+
+    </div>
+
+    <?php include 'footer.php'; ?>  
 </div>
 
+
+
  
-<?php include 'footer.php'; ?>  
+
 
 </body>
 

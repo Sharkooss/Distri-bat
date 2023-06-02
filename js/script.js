@@ -8,22 +8,22 @@ document.addEventListener("DOMContentLoaded", function() {
     const nextButton = document.getElementById("slide-arrow-next");
     nextButton.addEventListener("click", () => {
     const slideWidth = slide.clientWidth;
-    slidesContainer.scrollLeft += slideWidth;
+    slidesContainer.scrollLeft += 500;
     console.log(slidesContainer.scrollLeft)
     console.log(slideWidth)
-    if (slidesContainer.scrollLeft==slideWidth*4)
+    if (slidesContainer.scrollLeft==2000)
         slidesContainer.scrollLeft=0
     
     });
     
     prevButton.addEventListener("click", () => {
     const slideWidth = slide.clientWidth;
-    slidesContainer.scrollLeft -= slideWidth;
+    slidesContainer.scrollLeft -= 500;
     });
 
     click_event = new CustomEvent('click');
     setInterval(() => {
         nextButton.dispatchEvent(click_event)
-    }, 7000);
+    }, 1750);
 
 });
