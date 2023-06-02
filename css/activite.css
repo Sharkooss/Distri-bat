@@ -1,0 +1,140 @@
+@font-face {
+	font-family: 'annapolis';
+	src: url('/police/Annapolis.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.bleu {
+    color:#13A9DD ;
+}
+
+.activite-main-container{
+    position: relative;    
+    max-width: 100%;
+    height: 600px;
+    background-color: #373b4d;
+    top: 310px;
+    padding: 10PX;
+}
+
+.card{
+    border-radius: 5px;
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+}
+
+.activite-grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1FR);
+    grid-template-rows: repeat(2, 300px);
+    margin-bottom: 10px;
+    text-align: center;
+}   
+
+.card img{
+    width: 120%;
+    height: 120%;
+}
+
+.activite-grid-title{
+    font-size: 17px;
+    color: #13a9dd;
+    text-decoration: underline;
+    font-family: 'annapolis';
+}
+
+.activite-grid-text{
+    text-align: center;
+    font-size: 17px;
+    font-style: italic  ;
+    color: aliceblue;
+    font-family: 'Inter', sans-serif;
+    margin: 0 50px;
+}
+
+.activite-grid-btn{
+    font-size: 15px;
+    width: 50%;
+    height: 30px;
+    color: aliceblue;
+    background-color: #13a9dd;
+    border-radius: 10px;
+    font-family: 'inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.transi-contact-main{
+    overflow: hidden;
+    position: relative;
+    top: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;   
+    background: #373b4d;
+    width: 100%;
+    height: 300px;
+}
+
+.transi-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 50%;
+    height: 250px;
+    color: aliceblue;
+    font-style: italic;
+    font-size: 21px;
+    font-family: 'inter', sans-serif;
+    text-align: left;
+}
+.transi-contact{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    right: 100px;
+    width: 40%;
+    height: 200px;
+}
+
+.transi-contact-text{
+    text-align: center;
+    font-size: 20px;
+    color: aliceblue;
+    font-family: "inter", sans-serif;
+    font-size: 20px;
+    padding: 0 40px;
+}
+
+.transi-contact-btn-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.transi-contact-btn{
+    font-size: 20px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    background-color: #13A9DD;
+    border-radius: 5px;
+    color: aliceblue;
+    font-family: "inter", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
