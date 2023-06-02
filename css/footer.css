@@ -1,17 +1,33 @@
 
 
 .footer{
-    position: relative;
-    display: flex;  
-    bottom: 0;
-    width: 100%;
+    outline: none;
+    border: none;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.1px;
+}
+  
+.menufootercontact{
+    grid-row: span 10000;
+    background: #373B4D;
+}
+
+.menufooterlocaux{
+    grid-row: span 10000;
+    background: #D8EBF0;
+}
+
+.menufooterdevis{
+    grid-row: span 10000;
+    background: #13A9DD;
 }
 
 .footercontact{
     display: flex;
     justify-content: center;
     background: #373B4D;
-    width: 33%;
 }
 
 .footerlocaux{
@@ -19,15 +35,12 @@
     justify-content: center;
     background: #D8EBF0;    
     font-family: 'annapolis';
-    width: 34%;
 }
 
 .footerdevis{
     display: flex;
     justify-content: center;
-    background: #13A9DD;    
-    font-family: 'annapolis';
-    width: 33%;
+    background: #13A9DD;   
 }
 
 .footertextmenu{ 
@@ -59,3 +72,12 @@
     background: #D8EBF0;
     margin-bottom: 2vh;
 }
+
+.footermenu{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background: #000;
+
+}
+
