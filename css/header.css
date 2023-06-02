@@ -6,8 +6,8 @@ body{
     margin: 0;
 }
 
-.nav-main{
-    position: relative;
+
+.nav-info{
     position: fixed;
     width: 100%;
     height: 150px;
@@ -15,19 +15,17 @@ body{
     left: 0;
     z-index: 99;
     background-color: #373B4D;
-    border-radius: 0 0 50px 50px;
-}
-
-.nav-info{    
+    border-radius: 0 0 50px 50px;    
     display: flex;
     align-items: center;
     justify-content: space-between;
+    animation: rangedown 1s ease-in-out;
 }
 
 .nav-logo img{
+    transition: all 1s ease-in-out  ;
     margin: 15px;
     height: 120px;
-    width: auto;
     border-radius: 0 50px 0 50px;
 }
 
@@ -42,3 +40,52 @@ body{
     font-size: 20px;
     font-family: 'annapolis';
 }
+
+.nav-info.scrolled-info {
+    height: 50px;
+    animation: range 1s ease-in-out;
+}
+
+@keyframes range {
+    0%{
+        height: 150px;
+    }
+    100%{
+        height: 50px;
+    }
+}
+
+@keyframes rangedown {
+    0%{
+        height: 50px;
+    }
+    100%{
+        height: 150px;
+    }
+}
+
+.nav-logo img {
+    transition: opacity 0.3s ease-in-out; 
+}
+
+.nav-info.scrolled-info .nav-logo img {
+    opacity: 0;
+}
+
+
+.nav-info .logo-text {
+    position: absolute;
+    top: 15px;
+    left: 55px;
+    color: #13a9dd; /* Couleur du texte */
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'annapolis';
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.nav-info.scrolled-info .logo-text {
+    transform: scale(1);
+}
+
