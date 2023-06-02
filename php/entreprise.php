@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/header.css">
     <script src="\js\script.js"></script>
-    <script src="\js\footer.js"></script>
+    <script src="\js\footer.js" defer></script>
     <title>Document</title>
 </head>
 <header>
