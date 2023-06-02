@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/entreprise.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/header.css">
+    <script src="\js\script.js"></script>
     <title>Document</title>
 </head>
 <header>
@@ -33,6 +34,22 @@
             <div class="equipetexte">L'équipe est composée de collaborateurs issus du second œuvre du bâtiment : façadiers, peintres d'intérieur, maçon, carreleur, plaquiste, plombier... <br><br>
                 Soucieux et vigilants à l'évolution des techniques de pose et des produits, nous assurons des formations sur mesure.<br>
                 A l'écoute des clients, toujours prêts à rendre service.</div>
+        </div>
+        <div class='menuroulant'>
+
+
+            <button class="slide-arrow" id="slide-arrow-prev"><p class='prev'>&#8249;</p></button>
+            <button class="slide-arrow" id="slide-arrow-next"><p class='next'>&#8250;</p></button>
+
+
+            <ul class="slides-container" id="slides-container">
+                <li class="slide"><img src="\photo\entreprise\car-1.jpg" alt="f0" class='fcaroussel' ></li>
+                <li class="slide"><img src="\photo\entreprise\car-2.jpg" alt="f1" class='fcaroussel'></li>
+                <li class="slide"><img src="\photo\entreprise\car-3.jpg" alt="f2" class='fcaroussel'></li>
+                <li class="slide"><img src="\photo\entreprise\car-4.jpg" alt="f3" class='fcaroussel'></li>
+                <li class="slide"><img src="\photo\entreprise\car-5.jpg" alt="f4" class='fcaroussel'></li>
+            </ul>
+
         </div>
         <div class="paraequipe"></div>
     </div>
@@ -100,8 +117,7 @@
     </div>
 </div>
 <div class="rejoindrebg">
-</div>
-<div class="rejoindrecontainer">
+    <div class="rejoindrecontainer">
 
 
     <div class="rejoindre">
@@ -129,12 +145,21 @@
 
                 
             </div>
+
         </div>
     </div>
+
+    </div>
+
+    <?php include 'footer.php'; ?>  
 </div>
 
-<?php include 'footer.php'; ?>   
+
+
+ 
+
 
 </body>
+
 
 </html>

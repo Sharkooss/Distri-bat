@@ -1,4 +1,4 @@
-<footer>
+<div class="footer">
     <div class="footercontact">
         <div class="contactfooter">
             <div class="footertextmenu">
@@ -23,4 +23,4 @@
             <div class="footerrectangle3"></div>
         </div>
     </div> 
-</footer>
+</div>
