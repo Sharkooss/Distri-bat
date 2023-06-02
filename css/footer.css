@@ -1,4 +1,12 @@
 
+@font-face {
+	font-family: 'annapolis';
+	src: url('/police/Annapolis.ttf') format('truetype');
+}
+
+body{
+    margin: 0;
+}
 
 .footer{
     position: relative;

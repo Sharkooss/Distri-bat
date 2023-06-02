@@ -1,0 +1,134 @@
+@font-face {
+	font-family: 'annapolis';
+	src: url('/police/Annapolis.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    background: #373B4D;
+}
+
+.banniere-texte{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 175px;
+    left: 25%;
+    width: 50%;
+    height: 100px;
+    color: aliceblue;
+    font-family: 'annapolis';    
+}
+
+.banniere-block{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 430px;
+    background: #13A9DD;
+}
+
+.contmom{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 1000px;
+    top: 180px;
+}
+
+.banniere-titre{
+    font-weight: initial;
+    font-size: 40px;    
+}
+
+.containercontacttitle{
+    padding: 3%;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 87.5%;
+    background-color: #D8EBF0;
+    border-radius: 100px;
+    border: solid 44px white;
+}
+
+h1{
+    font-family: 'annapolis';
+    font-size: 50px;
+    color: #373B4D;
+}
+
+.containercontact{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.paracontact{
+    position: relative;
+    width: 50px;
+    height: 90%;
+    transform: skew(-20deg);
+    background: #13A9DD;
+}
+
+.contactgauche{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 30%;
+    height: 85%;
+    transform: skew(-10deg);
+}
+
+.contactinfo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-right: 50px ;
+    width: 30%;
+    height: 85%;
+    transform: skew(-7deg);
+}
+
+.coocontainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contactsvg{
+    height: 50px;
+    width: 50px;
+}
+
+.locacontact{
+    left: 0;
+    position: relative;
+    width: 30%;
+    height: 85%;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
