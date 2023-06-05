@@ -31,14 +31,16 @@ body{
     background: #13A9DD;
 }
 
+/*============================== CONTACT ==============================*/
+
+
 .contmom{
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
-    height: 1000px;
-    top: 180px;
+    height: 1900px;
+    top: 300px;
 }
 
 .banniere-titre{
@@ -131,4 +133,91 @@ h1{
     width: 30%;
     height: 85%;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+
+/*============================== DEVIS ET LABEL ==============================*/
+
+
+.deviscontainermom{
+    z-index: 1;
+    position: relative;
+    top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 1000px;
+    width: 90%;
+    background-color: white;
+    border-radius: 100px;
+    border: solid 44px white;
+}
+
+/*============================== LABEL ==============================*/
+
+.cerificationcontainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #D8EBF0;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+    height: 100%;
+    border-radius: 80px;
+}
+
+.separateur{
+    position: relative;
+    width: 70%;
+    height: 10px;
+    background: #373B4D;
+}
+
+.devistitre{
+    font-size: 40px;
+    font-style: italic;
+    font-family: sans-serif;
+    color: #373B4D;
+}
+
+.logodistribatdevis{
+    position: relative;
+    max-width: 100%;
+    height: 300px;
+}
+
+.demandedevistexte{
+    font-size: 27px;
+    font-style: italic;
+    font-family: sans-serif;
+    color: #373B4D;  
+}
+
+.labelimg{
+    max-width: 100%;
+    height: 150px;
+}
+
+.rscontainer{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding-bottom: 40px;
+}
+
+.rslogo{
+    height: 100px;
+    width: 100px;
+}
+
+/*============================== DEVIS ==============================*/
+
+.deviscontainer{
+    position: relative;
+    background: #D8EBF0;
+    width: 42%;
+    height: 100%;
+    border-radius: 80px;
+
 }
