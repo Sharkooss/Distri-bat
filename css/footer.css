@@ -171,6 +171,15 @@
     align-items: center;
 }
 
+.siege-social-botright{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .siege-social-txt {
     display: flex;
     flex-direction: column;
@@ -184,12 +193,20 @@
 
 .siege-social-txt h2 {
     margin-bottom:  5px;
+    font-size: 18px;
   }
   
   .siege-social-txt p {
     margin-top: 5px;
+    font-size: 12px;
   }
-.siege-social-topright{
+
+.maps{
+    height: 150px;
+    width: 200px;
+}
+
+/* .siege-social-topright{
     width: 50%;
     height: 150px;
 }
@@ -197,15 +214,7 @@
 .siege-social-botleft{
     width: 50%;
     height: 150px;
-}
-
-.siege-social-botleft{
-    margin-right: 15px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
+} */
 
 
 .overflow-devis{
