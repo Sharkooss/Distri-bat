@@ -25,11 +25,11 @@
         <div class="container-caroussel">
         </div>
         <div class="parallelogram">
-            <div class="parallelogram-block-texte"><p>ouvriers qualifiers</p></div>
+            <div class="parallelogram-block-text"><p>ouvriers qualifiers</p></div>
             <div class="separateur"></div>
             <div class="parallelogram-block-texte"><p>materiaux de qualité</p></div>
             <div class="separateur"></div>
-            <div class="parallelogram-block-texte">Qualification RGE QUALIBAT</div>
+            <div class="parallelogram-block-textes">Qualification RGE QUALIBAT</div>
             <div class="separateur"></div>
         </div>
     </div>

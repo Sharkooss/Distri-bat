@@ -109,8 +109,10 @@ body{
     margin-top: 20px;
     left: 60%;
 }
-
-.parallelogram-block-texte{
+.parallelogram-block-text,
+.parallelogram-block-texte,
+.parallelogram-block-textes {
+    opacity: 0;
     position: relative;
     width: 90%;
     height: 30px;
@@ -118,13 +120,72 @@ body{
     color: aliceblue;
     font-family: "annapolis";
     font-size: 20px;
+    transition: opacity 0.5s ease;
 }
 
-.separateur{
+.separateur {
     width: 50%;
     height: 10px;
     background-color: #13A9DD;
 }
+
+/* animations */
+.parallelogram-block-text {
+    transition: opacity 0.5s ease;
+    animation: late1 7s ease forwards;
+}
+
+.parallelogram-block-texte {
+    transition: opacity 0.5s ease;
+    animation: late2 7s ease forwards;
+}
+
+.parallelogram-block-textes {
+    transition: opacity 0.5s ease;
+    animation: late3 7s ease forwards;
+}
+
+@keyframes late1 {
+    0% {
+        opacity: 0;
+    }
+    1%{
+        opacity: 0;
+    }
+    33% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes late2 {
+    0% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes late3 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* animation */
 
 /*======= PARALLELOGRAME INDEX =========*/
 
@@ -463,8 +524,9 @@ body{
     width: 90%;
     height: 450px;
     display: flex;
-
 }
+
+
 
 .priorite-block-textG{
     position: relative;
@@ -508,21 +570,45 @@ body{
     font-weight: 100;
 }
 
-.priorite-block-textGa{    
-    line-height: 40px;    
-    font-size: 23px;
-}
-
-.priorite-block-textDo{     
-    line-height: 30px;
-    font-size: 20px;
-}
-
 .priorite-block-textD{
     position: relative;
     height: 100%;
     width: 50%;    
 }
+
+
+
+/* animation */
+
+.priorite-block-textDo,
+.priorite-block-textGa{
+    opacity: 0;
+    transition: opacity 1s ease, transform 1.5s ease;
+}
+
+.priorite-block-textGa{    
+    line-height: 40px;    
+    font-size: 23px;
+    transform: translateX(-100px);
+}
+
+.priorite-block-textDo{     
+    line-height: 30px;
+    font-size: 20px;
+    transform: translateX(100px);
+}
+
+.priorite-block-textGa.animate{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.priorite-block-textDo.animate{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+/* animation */
 
 /*==================== TRANSITION CONSEIL =========================*/
 
