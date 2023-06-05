@@ -12,3 +12,13 @@ window.addEventListener('DOMContentLoaded', function() {
           }
         }, 1); // Interval de rafraîchissement de l'animation
       });
+
+window.addEventListener('scroll', function() {
+  var gerantelement = document.querySelector('.gerant-element');
+  var gerantelementPosition = gerantelement.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (gerantelementPosition < windowHeight) {
+    gerantelement.classList.add('animate');
+  }
+});
