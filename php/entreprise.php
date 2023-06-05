@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/header.css">
     <script src="\js\script.js"></script>
+    <script src="\js\footer.js" defer></script>
     <title>Document</title>
 </head>
 <header>
@@ -43,7 +44,7 @@
 
 
             <ul class="slides-container" id="slides-container">
-                <li class="slide"><img src="\photo\entreprise\car-1.jpg" alt="f0" class='fcaroussel' ></li>
+                <li class="slide"><img src="\photo\entreprise\car-1.jpg" alt="f0" class='fcaroussel'></li>
                 <li class="slide"><img src="\photo\entreprise\car-2.jpg" alt="f1" class='fcaroussel'></li>
                 <li class="slide"><img src="\photo\entreprise\car-3.jpg" alt="f2" class='fcaroussel'></li>
                 <li class="slide"><img src="\photo\entreprise\car-4.jpg" alt="f3" class='fcaroussel'></li>
