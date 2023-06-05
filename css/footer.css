@@ -22,25 +22,6 @@
     border-radius: 15px 15px 0 0;
 }
 
-
-
-.overflow-devis{
-    height: 150px;
-    overflow: hidden;
-}
-
-.menufooterdevis{
-    width: 100%; 
-    height: 500px;
-    background: #13A9DD;
-    transition: transform 0.3s ease, border-radius 0.3s ease;   
-}
-
-.menufooterdevis:hover {
-    transform: translateY(-350px);
-    border-radius: 15px 15px 0 0;
-}
-
 .footer-title{
     width: 100%;
     display: flex;
@@ -153,11 +134,24 @@
     padding-left: 10px;
     margin-top: 30px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: baseline;
     width: 100%;
-    height: 50px;
+    height: 350px;
     transition: opacity 0.3s ease;
+}
+
+.siege-social-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.siege-social-bot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
 }
 
 .menufooterlocaux:hover .siege-social{
@@ -165,26 +159,85 @@
 }
 
 .home-img{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
-.siege-social-txt{
-    margin-bottom: 25px;
-    margin-left: 10px;
+.siege-social-topleft{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.siege-social-txt {
     display: flex;
     flex-direction: column;
     align-items: left;
-    justify-content: left;
+    line-height: 10px;
     color: #373B4D;
     font-family: 'inter', sans-serif;
+    height: auto;
+  }
+  
+
+.siege-social-txt h2 {
+    margin-bottom:  5px;
+  }
+  
+  .siege-social-txt p {
+    margin-top: 5px;
+  }
+.siege-social-topright{
+    width: 50%;
+    height: 150px;
 }
 
-.siege-social-title{
-    width: fit-content;
-    height: 30px;
+.siege-social-botleft{
+    width: 50%;
+    height: 150px;
 }
-.siege-social-lieu{
-    width: fit-content;
-    height: 30px;
+
+.siege-social-botleft{
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.overflow-devis{
+    height: 150px;
+    overflow: hidden;
+}
+
+.menufooterdevis{
+    width: 100%; 
+    height: 300px;
+    background: #13A9DD;
+    transition: transform 0.3s ease, border-radius 0.3s ease;   
+}
+
+.menufooterdevis:hover {
+    transform: translateY(-150px);
+    border-radius: 15px 15px 0 0;
+}
+
+.menufooterdevis:hover .mentions-legales{
+    opacity: 1;
+}
+
+.mentions-legales{
+    opacity: 0;
+    width: 100%;
+    margin-top: 70px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: underline;
+    font-family: 'inter', sans-serif;
+    transition: opacity 0.3s ease;
 }
