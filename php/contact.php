@@ -63,7 +63,9 @@
                 <img src="\photo\Logo\linkedin.svg" alt="linkedin" class="rslogo">
             </div>
         </div>
-        <div class="deviscontainer"></div>
+        <div class="deviscontainer">
+            <div class="devis"></div>
+        </div>
     </div>
 
 </div>
