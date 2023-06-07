@@ -4,11 +4,11 @@
             <img src="/photo/Logo/logo-complet-blanc.jpg" alt="logo distribat sur fond blanc">
         </div>
         <div class="nav-menu">
-            <div class="nav-acceuil">Acceuil</div>
-            <div class="nav-entreprise">L'Entreprise</div>
-            <div class="nav-activite">Nos Activités</div>
-            <div class="nav-realisation">Nos Réalisations</div>
-            <div class="nav-contact">Contact</div>
+            <a href="/index.php" class="nav-acceuil">Accueil</a>
+            <a href="/php/entreprise.php" class="nav-entreprise">L'Entreprise</a>
+            <a href="\php\activite.php" class="nav-activite">Nos Activités</a>
+            <a href="#realisation" class="nav-realisation">Nos Réalisations</a>
+            <a href="\php\contact.php" class="nav-contact">Contact</a>
         </div>
     </div>
 </div>
@@ -18,3 +18,4 @@
         <div class="banniere-soustitre">Isolation - peinture - facade</div>
     </div>
 </div>
+

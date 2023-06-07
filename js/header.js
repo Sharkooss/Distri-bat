@@ -9,14 +9,14 @@ window.addEventListener('DOMContentLoaded', function() {
     logoText.textContent = 'DISTRI-BAT';
 
     function handleScroll() {
-        if (window.pageYOffset > 0 && isAtTop) {
+        if ((window.pageYOffset > 0 && isAtTop) || window.innerWidth < 1500) {
             isAtTop = false;
 
             navInfo.classList.add('scrolled-info');
             // navLogo.style.display = 'none';
             navInfo.appendChild(logoText);
             navMenu.classList.add('scrolled-menu');
-        } else if (window.pageYOffset === 0 && !isAtTop) {
+        } else if (window.pageYOffset === 0 && !isAtTop && window.innerWidth >= 1500) {
             isAtTop = true;
 
             navInfo.classList.remove('scrolled-info');
@@ -27,4 +27,6 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll);
 });
+
