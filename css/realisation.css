@@ -1,0 +1,273 @@
+@font-face {
+	font-family: 'annapolis';
+	src: url('/police/Annapolis.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    margin: 0;
+    height: 2500px;
+}
+
+.bleu {
+    color:#13A9DD ;
+}
+
+/* Styles pour la barre de défilement */
+::-webkit-scrollbar {
+    width: 8px; /* Épaisseur de la barre de défilement */
+    background-color: #f1f1f1; /* Couleur de fond de la barre de défilement */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #404040, #6b6b6b); /* Dégradé de gris foncé */
+    border-radius: 4px; /* Coins arrondis */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #363636, #606060); /* Dégradé de gris foncé au survol */
+  }
+  
+  ::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(135deg, #2d2d2d, #545454); /* Dégradé de gris foncé au clic */
+  }
+  
+  /* Styles pour les coins arrondis du track (piste) de défilement */
+  ::-webkit-scrollbar-track {
+    border-radius: 4px; /* Coins arrondis */
+  }
+
+/*========== BANNIERE ===========*/
+
+.banniere-block{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 3950px;
+    background: linear-gradient(#13A9DD 80%, #d8ebf0 20%);
+    text-align: center;
+}
+
+.banniere-texte{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 175px;
+    width: 100%;
+    height: 100px;
+    color: aliceblue;
+    font-family: 'annapolis';    
+}
+
+.banniere-titre{
+    font-weight: initial;
+    font-size: 40px;    
+}
+
+/*========== BANNIERE ===========*/
+
+/* Ravalement caroussel */
+
+
+.ravalement-center-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    top: 350px;
+}
+
+.ravalement-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 500px);
+    height: 100%;
+    max-width: 1500px; 
+    background-color: #D8EBF0;
+    border-radius: 100px;
+    border: solid 44px white; 
+    margin: 0 auto;
+}
+  
+.ravalement-container-title{
+    opacity: 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height:50px;
+    color: #373b4d;
+    font-family: "annapolis";  
+    font-size: 30px;  
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out forwards;
+}  
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.ravalement-caroussel-container{
+    position: relative;
+	display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 70%;
+    margin-bottom: 50px;
+}
+
+.ravalement-caroussel{
+    max-width: 500px;
+    min-width: 500px;
+    height: 100%;
+    background-color: #373b4d;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+/* Ravalement caroussel */
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+    position: absolute;
+    width: 500px;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #13a9dd;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #13a9dd;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio6:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio7:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio8:checked ~ .first{
+    margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    margin-top: 400px;    
+}
+
+.navigation-auto div{
+    border: 2px solid #13a9dd;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #13a9dd;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #13a9dd;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #13a9dd;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #13a9dd;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: #13a9dd;
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background: #13a9dd;
+}
+
+#radio7:checked ~ .navigation-auto .auto-btn7{
+    background: #13a9dd;
+}
+
+#radio8:checked ~ .navigation-auto .auto-btn8{
+    background: #13a9dd;
+}
