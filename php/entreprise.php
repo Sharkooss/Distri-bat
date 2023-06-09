@@ -13,10 +13,11 @@
     <title>Document</title>
 </head>
 <header>
-    <?php include 'header.php'; ?>    
+    <?php include 'header.php'; ?>          
 </header>   
 <body>
 
+<div class="entreprisecontmom">
 <div class="containerentreprise">
     
 
@@ -89,6 +90,7 @@
     </div>
 
 </div>
+</div>
 
 
 <div class="RGEcontainer">
@@ -118,6 +120,9 @@
 
     </div>
 </div>
+
+
+
 <div class="rejoindrebg">
     <div class="rejoindrecontainer">
 
@@ -153,10 +158,10 @@
 
     </div>
 
-    <?php include 'footer.php'; ?>  
+    
 </div>
 
-
+<?php include 'footer.php'; ?>  
 
  
 

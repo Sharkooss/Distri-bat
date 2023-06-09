@@ -14,6 +14,13 @@ body{
 
 /*========== BANNIERE ===========*/
 
+.entreprisecontmom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
 .banniere-block{
     position: absolute;
     top: 0;
@@ -42,13 +49,14 @@ body{
 }
 
 .containerentreprise{
-    padding: 3%;
     z-index: 1;
     position: relative;
     display: block;
     height: 1900px;
-    width: 87.5%;
-    left: 1%;
+    max-width: 1500px;
+    width: 90%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     top: 310px;
     background-color: #D8EBF0;
     border-radius: 100px;
@@ -163,8 +171,12 @@ body{
 
 .choisirlogodistribatcontainer{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background: white;
-    height: 100%;
+    max-height: 100%;
     width: 50%;
     border-radius: 20px;
     left: 2%;
@@ -172,10 +184,9 @@ body{
 
 .choisirlogodistribat{
     position: relative;
-    top: 17%;
-    left: 5%;
-    width: 80%;
-    height: 65%;
+    max-width: 80%;
+    max-height: 100%;
+
 }
 
 .parachoisir{
@@ -205,14 +216,14 @@ body{
 .choisirtitre{
     color: #13A9DD;
     text-decoration-line: underline;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
 }
 
 .choisirtexte{
-    font-size: 24px;
+    font-size: 22px;
     text-align: left;
-    width: 92%;
+    width: 85%;
 }
 
 /*============================== CERTIFICATION ==============================*/
@@ -262,6 +273,10 @@ body{
 .certificationlogodistribatcontainer{
     position: relative;
     background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
     width: 48%;
     border-radius: 20px;
@@ -270,10 +285,9 @@ body{
 
 .certificationlogoRGE{
     position: relative;
-    top: 15%;
-    left: 10%;
-    width: 80%;
-    height: 70%;
+    max-width: 80%;
+    max-height: 100%;
+
 }
 
 /*============================== RGE ==============================*/
@@ -324,6 +338,7 @@ body{
     flex-direction: column;
     position: relative;
     border-radius: 20px;
+    max-width: 500px;
     width: 30%;
     height: 70%;
     background: #13A9DD;
@@ -347,15 +362,18 @@ body{
     top: 210px;
     width: 100%;
     height: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .rejoindrecontainer{
-    padding: 3%;
     position: relative;
-    display: block;
+    padding-top: 3%;
+    padding-bottom: 3%;
     height: 600px;
-    width: 87.5%;
-    left: 1%;
+    max-width: 1750px;
+    width: 90%;
     top: -100px;
     background-color: #D8EBF0;
     border-radius: 100px;
@@ -364,16 +382,25 @@ body{
 
 .rejoindre{
     display: flex;
+    align-items: center;
     height: 100%;
     width: 100%;
 }
 
 .imgrejoindre{
-    position: absolute;
+    position: relative;
     left: 5.75%;
     width: 46%;
     height: 600px;
     border-radius: 10px;
+}
+
+.pararejoindre{
+    position: relative;
+    width: 230px;
+    height: 600px;
+    transform: skew(-15deg);
+    background: #373B4D;
 }
 
 .rejoindretextecontainer{
@@ -382,10 +409,9 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    left: 62%;
-    top: 4%;
-    height: 90%;
-    width: 35%;
+    height: 100%;
+    width: 30%;
+    left: 5%;
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-style: italic;
@@ -399,16 +425,7 @@ body{
 }
 
 .rejoindretexte{
-    font-size: 25px;
-}
-
-.pararejoindre{
-    position: absolute;
-    width: 230px;
-    height: 600px;
-    transform: skew(-15deg);
-    background: #373B4D;
-    left: 45%;
+    font-size: 23px;
 }
 
 .rejoindrebouton{
