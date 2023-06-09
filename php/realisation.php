@@ -32,16 +32,16 @@
                         <input type="radio" name="radio-btn" id="radio4">
 
                         <div class="slide first">
-                          <img src="/photo/realisation/1.jpg" alt="">
+                          <img src="/photo/realisation/car1/1.jpg" alt="">
                         </div>
                         <div class="slide">
-                          <img src="/photo/realisation/2.jpg" alt="">
+                          <img src="/photo/realisation/car1/2.jpg" alt="">
                         </div>
                         <div class="slide">
-                          <img src="/photo/realisation/3.jpg" alt="">
+                          <img src="/photo/realisation/car1/3.jpg" alt="">
                         </div>
                         <div class="slide">
-                          <img src="/photo/realisation/4.jpg" alt="">
+                          <img src="/photo/realisation/car1/4.jpg" alt="">
                         </div>
                         <!--slide images end-->
                         <!--automatic navigation start-->
@@ -71,16 +71,16 @@
                         <input type="radio" name="radio-btn" id="radio8">
 
                         <div class="slide first">
-                          <img src="/photo/realisation/1.jpg" alt="">
+                          <img src="/photo/realisation/car2/1.jpg" alt="">
                         </div>
                         <div class="slide">
-                          <img src="/photo/realisation/2.jpg" alt="">
+                          <img src="/photo/realisation/car2/2.jpg" alt="">
                         </div>
                         <div class="slide">
-                          <img src="/photo/realisation/3.jpg" alt="">
+                          <img src="/photo/realisation/car2/3.jpg" alt="">
                         </div>
                         <div class="slide">
-                          <img src="/photo/realisation/4.jpg" alt="">
+                          <img src="/photo/realisation/car2/4.jpg" alt="">
                         </div>
                         <!--slide images end-->
                         <!--automatic navigation start-->
@@ -102,6 +102,61 @@
                 </div>
             </div>        
         </div>
+    </div>
+
+    <div class="isolation-center-container">
+      <div class="isolation-container">
+        <div class="isolation-title">Isolationthermique par l'extérieur</div>
+        <div class="av-ap-container">
+          <h2 class="scroll-title">Après</h2>
+          <h2 class="scroll-title">Avant</h2>
+        </div>
+        <div class="isolation-content">
+          <div class="isolation-caroussel-container">
+            <div class="parallelogram"></div>
+            <div class="isolation-caroussel">
+              <div class="slides">
+                <input type="radio" name="radio-btn" id="radio9">
+                <input type="radio" name="radio-btn" id="radio10">
+                <input type="radio" name="radio-btn" id="radio11">
+                <input type="radio" name="radio-btn" id="radio12">
+
+                <div class="slide-isolation first">
+                  <img src="\photo\realisation\av-ap\av-ap1.png" alt="">
+                </div>
+                <div class="slide-isolation">
+                  <img src="\photo\realisation\av-ap\av-ap2.png" alt="">
+                </div>
+                <div class="slide-isolation">
+                  <img src="\photo\realisation\av-ap\av-ap3.png" alt="">
+                </div>
+                <div class="slide-isolation">
+                  <img src="\photo\realisation\av-ap\av-ap4.png" alt="">
+                </div>
+                <!--slide images end-->
+                <!--automatic navigation start-->
+                <div class="navigation-auto-isolation">
+                  <div class="auto-btn9"></div>
+                  <div class="auto-btn10"></div>
+                  <div class="auto-btn11"></div>
+                  <div class="auto-btn12"></div>
+                </div>
+              
+
+                <div class="navigation-manual-isolation">
+                  <label for="radio9" class="manual-btn"></label>
+                  <label for="radio10" class="manual-btn"></label>
+                  <label for="radio11" class="manual-btn"></label>
+                  <label for="radio12" class="manual-btn"></label>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="avis-container">
+          
     </div>
     
 
