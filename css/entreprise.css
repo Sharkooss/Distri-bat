@@ -6,6 +6,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 
+*{
+    border: dashed 1px red;
+}
 
 body{
     margin: 0;
@@ -76,21 +79,20 @@ body{
 }
 
 .imghistorique{
-    position: absolute;
+    position: relative;
     left: 6%;
-    width: 45%;
-    height: 475px;
+    max-width: 45%;
     border-radius: 10px;
 }
 
 .historiquetextecontainer{
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    left: 62%;
-    top: 17%;
+    left: 18%;
+    top: 20%;
     height: 55%;
     width: 35%;
     text-align: center;
@@ -124,17 +126,17 @@ body{
     display: flex;
     height: 25%;
     width: 100%;
+    align-items: center;
 }
 
 .equipetextecontainer{
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     left: 5%;
-    top: 7%;
-    height: 80%;
+    height: 100%;
     width: 35%;
     text-align: center;
     font-family: 'Inter', sans-serif;
@@ -161,6 +163,45 @@ body{
     left: 46%;
 }
 
+/*============================== CAROUSSEL ==============================*/
+
+.slider{
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 262px;
+    height: 100%;
+    left: 37%;
+}
+
+
+#precedent,
+#suivant {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    font-size: 50px;
+    color: #D8EBF0;
+    background-color: #373B4D;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#precedent {
+    left: 0;
+}
+
+#suivant {
+    right: 0;
+}
+
+#slider:hover #precedent,
+#slider:hover #suivant {
+    opacity: 0.7;
+}
+
 /*============================== CHOISIR ==============================*/
 
 .choisir{
@@ -177,9 +218,9 @@ body{
     flex-direction: column;
     background: white;
     max-height: 100%;
-    width: 50%;
+    width: 47%;
     border-radius: 20px;
-    left: 2%;
+    left: 5%;
 }
 
 .choisirlogodistribat{
@@ -201,12 +242,11 @@ body{
 .choisirtextecontainer{
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    left: 10%;
-    top: 5%;
-    height: 85%;
+    left: 13%;
+    height: 100%;
     width: 40%;
     text-align: center;
     font-family: 'Inter', sans-serif;
@@ -232,18 +272,18 @@ body{
     display: flex;
     height: 25%;
     width: 100%;
+    align-items: center;
 }
 
 .certificationtextecontainer{
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    left: 2%;
-    top: 5%;
-    height: 85%;
+    left: 5%;
     width: 38%;
+    height: 100%;
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-style: italic;
@@ -252,12 +292,12 @@ body{
 .certificationtitre{
     color: #13A9DD;
     text-decoration-line: underline;
-    font-size: 49px;
+    font-size: 40px;
     font-weight: bold;
 }
 
 .certificationtexte{
-    font-size: 23px;
+    font-size: 20px;
     width: 92%;
 }
 
@@ -278,16 +318,15 @@ body{
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    width: 48%;
+    width: 44%;
     border-radius: 20px;
-    left: 12%;
+    left: 13%;
 }
 
 .certificationlogoRGE{
     position: relative;
-    max-width: 80%;
-    max-height: 100%;
-
+    max-width: 100%;
+    width: 35%;
 }
 
 /*============================== RGE ==============================*/
@@ -368,6 +407,7 @@ body{
 }
 
 .rejoindrecontainer{
+    display: flex;
     position: relative;
     padding-top: 3%;
     padding-bottom: 3%;
@@ -383,22 +423,24 @@ body{
 .rejoindre{
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100%;
     width: 100%;
 }
 
 .imgrejoindre{
     position: relative;
-    left: 5.75%;
-    width: 46%;
-    height: 600px;
+    left: 2%;
+    max-width: 100%;
+    width: 45%;
     border-radius: 10px;
 }
 
 .pararejoindre{
     position: relative;
-    width: 230px;
+    width: 170px;
     height: 600px;
+    right: 50px;
     transform: skew(-15deg);
     background: #373B4D;
 }
@@ -411,7 +453,7 @@ body{
     flex-direction: column;
     height: 100%;
     width: 30%;
-    left: 5%;
+    left: 1%;
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-style: italic;
@@ -442,66 +484,133 @@ body{
 
 }
 
-/*============================== CAROUSSEL ==============================*/
+/*============================== RESPONSIVE ==============================*/
 
-.menuroulant{
-    position: relative;
-    overflow: hidden;
-    width: 30%;
-    height: 100%;
-    left: 27%;
+
+
+@media (max-width: 1666px){
+
     
+    .choisirtitre{
+        font-size: 45px;
+        top: 5%;
+    }
+    
+    .choisirtexte{
+        font-size: 20px;
+        width: 75%;
+    }
 }
 
-.slides-container{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    scroll-behavior: smooth;
+@media (max-width: 1596px){
+
+    .choisirtitre{
+    font-size: 40px;
+    }
+}
+
+@media (max-width: 1486px){
+
+    .choisirtexte{
+        font-size: 20px;
+        width: 70%;
+    }
+
+    .RGEcasestexte{
+        font-size: 20px;
+    }
+    .RGEcases{
+        position: relative;
+        top: 5%;
+        height: 55%;
+    }
 
 }
 
-.slide{
-    position: relative;
-    margin-right: 119px;
-    margin-left: 119px;
-    height: 100%;
-    width: 100%;
-}
+@media (max-width: 1425px){
+    .para{
+        display: none;
+    }
 
+    .historique{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
 
-.slide-arrow {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    background: transparent;
-    margin: auto;
-    border: none;
-    font-size: 10rem;
-    padding: 0;
-    cursor: pointer;
-    z-index: 2;
-}
- 
-#slide-arrow-prev {
-    left: 0;
-}
- 
-#slide-arrow-next {
-    right: 0;
-}
+    .imghistorique{
+        width: 45%;
+        left: 0;
+        top: 0;
+    }
+    
+    .historiquetextecontainer{
+        top: 0;
+        left: 0;
+    }
 
-.prev{
-    position: relative;
-    top: -4px;
-}
+    .equipe{
+        justify-content: space-around;
+    }
 
-.next{
-    position: relative;
-    top: -4px;
+    .equipetextecontainer{
+        left: 0;
+    }
+    
+    .equipetitre{
+        color: #13A9DD;
+        text-decoration-line: underline;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .slider{
+        left: 0;
+        transform: scale(0.9);
+    }
+    
+
+    .choisir{
+        justify-content: space-around;
+    }
+    
+    .choisirlogodistribatcontainer{
+        left: 0;
+        transform: scale(0.85);
+    }
+
+    .parachoisir{
+        left: 0;
+    }
+    
+    .choisirtextecontainer{
+        left: 0;
+    }
+    
+    .certification{
+        justify-content: space-around;
+    }
+    
+    .certificationtextecontainer{
+        left: 0;
+    }
+
+    .certificationlogodistribatcontainer{
+        left: 0;
+        
+        transform: scale(0.85);
+    }
+
+    .rejoindre{
+        justify-content: space-around;
+    }
+    
+    .imgrejoindre{
+        left: 0;
+    }
+    
+    .rejoindretextecontainer{
+        left: 0;
+        width: 50%;
+    }
 }

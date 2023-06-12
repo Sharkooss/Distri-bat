@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/entreprise.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/header.css">
-    <script src="\js\script.js"></script>
+    <script src="\js\script.js" defer></script>
     <script src="\js\header.js"></script>
     <script src="\js\footer.js" defer></script>
     <title>Document</title>
@@ -23,7 +23,7 @@
 
     <div class="historique">
         <img class="imghistorique" src="/photo/entreprise/historique.jpg" alt="histoire entreprise image">
-        <div class="parahistorique"></div>
+        <div class="parahistorique para"></div>
         <div class="historiquetextecontainer">
             <div class="historiquetitre">L'historique</div>
             <div class="historiquetexte">Jeune entreprise bénéficiant des outils de pointe, pilotée par le gérant apportant sa forte expérience et ses compétences.</div>
@@ -38,23 +38,16 @@
                 Soucieux et vigilants à l'évolution des techniques de pose et des produits, nous assurons des formations sur mesure.<br>
                 A l'écoute des clients, toujours prêts à rendre service.</div>
         </div>
-        <div class='menuroulant'>
 
 
-            <button class="slide-arrow" id="slide-arrow-prev"><p class='prev'>&#8249;</p></button>
-            <button class="slide-arrow" id="slide-arrow-next"><p class='next'>&#8250;</p></button>
-
-
-            <ul class="slides-container" id="slides-container">
-                <li class="slide"><img src="\photo\entreprise\car-1.jpg" alt="f0" class='fcaroussel'></li>
-                <li class="slide"><img src="\photo\entreprise\car-2.jpg" alt="f1" class='fcaroussel'></li>
-                <li class="slide"><img src="\photo\entreprise\car-3.jpg" alt="f2" class='fcaroussel'></li>
-                <li class="slide"><img src="\photo\entreprise\car-4.jpg" alt="f3" class='fcaroussel'></li>
-                <li class="slide"><img src="\photo\entreprise\car-5.jpg" alt="f4" class='fcaroussel'></li>
-            </ul>
-
+        <div class="slider" id="slider">
+            <img src="\photo\entreprise\car-1.jpg" alt="Employé 1" id="slide">
+            <div id="precedent" onclick="ChangeSlide(-1)"><</div>
+            <div id="suivant" onclick="ChangeSlide(1)">></div>
         </div>
-        <div class="paraequipe"></div>
+
+
+        <div class="paraequipe para"></div>
     </div>
 
 
@@ -62,7 +55,7 @@
         <div class="choisirlogodistribatcontainer">
             <img class='choisirlogodistribat' src="\photo\entreprise\Logo-distribat-Aout-2021-removebg-preview_edited.png" alt="logo distribat">
         </div>
-        <div class="parachoisir"></div>
+        <div class="parachoisir para"></div>
         <div class="choisirtextecontainer">
             <div class="choisirtitre">Choisir Distri-Bat sinistres</div>
             <div class="choisirtexte">- 30 ans d’expérience dans le secteur d’activité de la façade <br>
@@ -86,7 +79,7 @@
         <div class="certificationlogodistribatcontainer">
             <img class='certificationlogoRGE' src="\photo\entreprise\RGE.png" alt="logo distribat">
         </div>
-        <div class="paracertification"></div>
+        <div class="paracertification para"></div>
     </div>
 
 </div>
@@ -133,7 +126,7 @@
         <img class="imgrejoindre" src="\photo\entreprise\rejoindre.jpg" alt="véhicule distribat">
 
 
-        <div class="pararejoindre"></div>
+        <div class="pararejoindre para"></div>
 
 
         <div class="rejoindretextecontainer">
@@ -161,7 +154,7 @@
     
 </div>
 
-<?php include 'footer.php'; ?>  
+
 
  
 
