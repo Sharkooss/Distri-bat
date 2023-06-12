@@ -7,7 +7,6 @@
 
 body{
     margin: 0;
-    height: 2500px;
 }
 
 .bleu {
@@ -43,6 +42,7 @@ body{
 .banniere-block{
     position: absolute;
     top: 0;
+    height: 3800px;
     width: 100%;
     background: linear-gradient(#13A9DD 80%, #d8ebf0 20%);
     text-align: center;
