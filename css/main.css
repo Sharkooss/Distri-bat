@@ -44,7 +44,6 @@ body{
     position: absolute;
     top: 0;
     width: 100%;
-    height: 3950px;
     background: linear-gradient(#13A9DD 80%, #d8ebf0 20%);
     text-align: center;
 }
