@@ -25,12 +25,15 @@
         <div class="container-caroussel">
         </div>
         <div class="parallelogram">
-            <div class="parallelogram-block-text"><p>ouvriers qualifiers</p></div>
+            <div class="parallelogram-block-texte"><p>ouvriers qualifiers</p></div>
             <div class="separateur"></div>
             <div class="parallelogram-block-texte"><p>materiaux de qualité</p></div>
             <div class="separateur"></div>
-            <div class="parallelogram-block-textes">Qualification RGE QUALIBAT</div>
+            <div class="parallelogram-block-texte">Qualification RGE QUALIBAT</div>
             <div class="separateur"></div>
+        </div>
+        <div class="responsive-texte">
+            <p><a class="bleu">//</a>ouvriers qualifiers <a class="bleu">//</a> materiaux de qualité <a class="bleu">//</a> <br><a class="bleu">//</a> Qualification RGE QUALIBAT<a class="bleu">//</a></p>
         </div>
     </div>
 
@@ -94,8 +97,8 @@
             interviennent sur tous les départements du Languedoc-Roussillon.
             </div>
             <div class="presentation-texte2">
-            Rénovation de façades <a class="b">//</a> Traitement de fissures <a class="b">//</a> Isolation thermique par 
-            l'extérieur (ITE) <a class="b">//</a> Travaux intérieurs (peinture, papier-peint, décoration, carrelage et revêtement de sol) ...
+            Rénovation de façades <a class="bleu">//</a> Traitement de fissures <a class="bleu">//</a> Isolation thermique par 
+            l'extérieur (ITE) <a class="bleu">//</a> Travaux intérieurs (peinture, papier-peint, décoration, carrelage et revêtement de sol) ...
             </div>
             <div class="presentation-boutton-devis">
                 <div class="button-devis">Demander Un Devis</div>
