@@ -535,6 +535,15 @@ body{
 }
 
 @media (max-width: 1425px){
+
+    .rejoindrecontainer{
+        border: solid 21px white;
+    }
+
+    .containerentreprise{
+        border: solid 21px white;
+    }
+
     .para{
         display: none;
     }
@@ -617,6 +626,7 @@ body{
     
     .imgrejoindre{
         left: 0;
+        border: solid 10px #373B4D;
     }
     
     .rejoindretextecontainer{
@@ -770,7 +780,6 @@ body{
     
     .imgrejoindre{
         left: 0;
-        border: solid 10px #373B4D;
     }
     
     .rejoindretextecontainer{
@@ -817,17 +826,17 @@ body{
     }
 
     .rejoindretextecontainer{
-        height: 70%;
+        height: 60%;
     }
 
     .imgrejoindre{
         left: 0;
-        top: 0%;
+        top: 5%;
         transform: scale(1.5);
     }
 
     .rejoindrecontainer{
-        height: 900px;
+        height: 1000px;
     }
 
     .RGEtitre{
@@ -848,20 +857,7 @@ body{
     }
 }
 
-@media (max-width: 600px){
 
-    .RGEcases{
-        position: relative;
-        top: 5%;
-        height: 35%;
-        font-size: 10px;
-    } 
-    
-    .RGEcontainer{
-        height: 550px;
-    }
-
-}
 
 @media (max-width: 477px){
 
@@ -884,16 +880,32 @@ body{
 }
 
 @media (max-width: 600px){
+    
+    .RGEtitre{
+        top: 15%;
+    }
+
+    .RGErectangle{
+        top: 20%;
+    }
+
+    .RGEcasescontainer{
+        flex-wrap: wrap;
+        position: absolute;
+        bottom:  5%;
+    }
 
     .RGEcases{
         position: relative;
+        flex: 1 0 150px;
         top: 5%;
         height: 30%;
-        font-size: 8px;
+        font-size: 13px;
+        border: solid 5px #D8EBF0;
     } 
     
     .RGEcontainer{
-        height: 500px;
+        height: 1100px;
     }    
 
     .rejoindrebouton{
@@ -916,17 +928,30 @@ body{
 }
 
 
+@media (max-width: 445px){
+    .RGEcontainer{
+        height: 1600px;
+    }
+
+    .RGEcases{
+        position: relative;
+        top: 5%;
+        height: 15%;
+        font-size: 15px;
+    } 
+}
+
 @media (max-width: 360px){
 
     .RGEcases{
         position: relative;
         top: 5%;
         height: 25%;
-        font-size: 7px;
+        font-size: 15px;
     } 
     
     .RGEcontainer{
-        height: 500px;
+        height: 1700px;
     }    
 
     .rejoindrebouton{
