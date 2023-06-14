@@ -83,6 +83,16 @@ window.addEventListener('scroll', function() {
   
 });
 
+var elements = document.querySelectorAll('.prestation-cartes-1, .prestation-cartes-2, .prestation-cartes-3, .prestation-cartes-4');
+
+elements.forEach(function(element) {
+  element.addEventListener('click', function() {
+    this.classList.toggle('clicked');
+  });
+});
+
+
+
 
 
 
