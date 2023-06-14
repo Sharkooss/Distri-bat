@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 
 
+
 body{
     margin: 0;
     z-index: -1;
@@ -14,11 +15,19 @@ body{
 
 /*========== BANNIERE ===========*/
 
+.entreprisecontmom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
 .banniere-block{
     position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
-    height: 2315px;
+    height: 3000px;
     background: #13A9DD;
 }
 
@@ -42,13 +51,14 @@ body{
 }
 
 .containerentreprise{
-    padding: 3%;
     z-index: 1;
     position: relative;
     display: block;
     height: 1900px;
-    width: 87.5%;
-    left: 1%;
+    max-width: 1500px;
+    width: 90%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     top: 310px;
     background-color: #D8EBF0;
     border-radius: 100px;
@@ -57,6 +67,10 @@ body{
 
 .bleu{
     color: #13A9DD;
+}
+
+.separateurphone{
+    display: none;
 }
 
 /*============================== HISTORIQUE ==============================*/
@@ -68,21 +82,20 @@ body{
 }
 
 .imghistorique{
-    position: absolute;
+    position: relative;
     left: 6%;
-    width: 45%;
-    height: 475px;
+    max-width: 45%;
     border-radius: 10px;
 }
 
 .historiquetextecontainer{
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    left: 62%;
-    top: 17%;
+    left: 18%;
+    top: 20%;
     height: 55%;
     width: 35%;
     text-align: center;
@@ -116,17 +129,17 @@ body{
     display: flex;
     height: 25%;
     width: 100%;
+    align-items: center;
 }
 
 .equipetextecontainer{
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     left: 5%;
-    top: 7%;
-    height: 80%;
+    height: 100%;
     width: 35%;
     text-align: center;
     font-family: 'Inter', sans-serif;
@@ -153,6 +166,47 @@ body{
     left: 46%;
 }
 
+/*============================== CAROUSSEL ==============================*/
+
+.slider{
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 262px;
+    height: 95%;
+    left: 37%;
+    border: solid 10px #373B4D;
+    border-radius: 10px;
+}
+
+
+#precedent,
+#suivant {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    font-size: 50px;
+    color: #D8EBF0;
+    background-color: #373B4D;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#precedent {
+    left: 0;
+}
+
+#suivant {
+    right: 0;
+}
+
+#slider:hover #precedent,
+#slider:hover #suivant {
+    opacity: 0.7;
+}
+
 /*============================== CHOISIR ==============================*/
 
 .choisir{
@@ -163,19 +217,22 @@ body{
 
 .choisirlogodistribatcontainer{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background: white;
-    height: 100%;
-    width: 50%;
+    max-height: 100%;
+    width: 47%;
     border-radius: 20px;
-    left: 2%;
+    left: 5%;
 }
 
 .choisirlogodistribat{
     position: relative;
-    top: 17%;
-    left: 5%;
-    width: 80%;
-    height: 65%;
+    max-width: 80%;
+    max-height: 100%;
+
 }
 
 .parachoisir{
@@ -190,12 +247,11 @@ body{
 .choisirtextecontainer{
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    left: 10%;
-    top: 5%;
-    height: 85%;
+    left: 13%;
+    height: 100%;
     width: 40%;
     text-align: center;
     font-family: 'Inter', sans-serif;
@@ -205,14 +261,14 @@ body{
 .choisirtitre{
     color: #13A9DD;
     text-decoration-line: underline;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
 }
 
 .choisirtexte{
-    font-size: 24px;
+    font-size: 22px;
     text-align: left;
-    width: 92%;
+    width: 85%;
 }
 
 /*============================== CERTIFICATION ==============================*/
@@ -221,18 +277,18 @@ body{
     display: flex;
     height: 25%;
     width: 100%;
+    align-items: center;
 }
 
 .certificationtextecontainer{
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    left: 2%;
-    top: 5%;
-    height: 85%;
+    left: 4%;
     width: 38%;
+    height: 100%;
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-style: italic;
@@ -241,12 +297,12 @@ body{
 .certificationtitre{
     color: #13A9DD;
     text-decoration-line: underline;
-    font-size: 49px;
+    font-size: 40px;
     font-weight: bold;
 }
 
 .certificationtexte{
-    font-size: 23px;
+    font-size: 20px;
     width: 92%;
 }
 
@@ -262,18 +318,20 @@ body{
 .certificationlogodistribatcontainer{
     position: relative;
     background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
-    width: 48%;
+    width: 44%;
     border-radius: 20px;
-    left: 12%;
+    left: 13%;
 }
 
 .certificationlogoRGE{
     position: relative;
-    top: 15%;
-    left: 10%;
-    width: 80%;
-    height: 70%;
+    max-width: 100%;
+    width: 35%;
 }
 
 /*============================== RGE ==============================*/
@@ -281,7 +339,7 @@ body{
 .RGEcontainer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     position: relative;
     display: block;
     height: 1050px;
@@ -297,6 +355,7 @@ body{
     top: 13%;
     color: aliceblue;
     font-size: 50px;
+    font-style: italic;
 }
 
 .RGErectangle{
@@ -321,23 +380,26 @@ body{
 .RGEcases{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     position: relative;
     border-radius: 20px;
-    width: 30%;
-    height: 70%;
+    max-width: 500px;
+    width: 25%;
+    height: 60%;
     background: #13A9DD;
-}
-
-.RGEcasestexte{
     position: relative;
-    font-size: 175%;
+    font-size: 30px;
     font-weight: bold;
     font-style: italic;
     color: aliceblue;
-    margin: 50px;
+    padding: 20px;
     text-align: center;
 }
+
+
+
+
 
 /*============================== REJOINDRE ==============================*/
 
@@ -347,15 +409,19 @@ body{
     top: 210px;
     width: 100%;
     height: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .rejoindrecontainer{
-    padding: 3%;
+    display: flex;
     position: relative;
-    display: block;
+    padding-top: 3%;
+    padding-bottom: 3%;
     height: 600px;
-    width: 87.5%;
-    left: 1%;
+    max-width: 1750px;
+    width: 90%;
     top: -100px;
     background-color: #D8EBF0;
     border-radius: 100px;
@@ -364,28 +430,38 @@ body{
 
 .rejoindre{
     display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     width: 100%;
 }
 
 .imgrejoindre{
-    position: absolute;
-    left: 5.75%;
-    width: 46%;
-    height: 600px;
+    position: relative;
+    left: 2%;
+    max-width: 100%;
+    width: 45%;
     border-radius: 10px;
+}
+
+.pararejoindre{
+    position: relative;
+    width: 170px;
+    height: 600px;
+    right: 50px;
+    transform: skew(-15deg);
+    background: #373B4D;
 }
 
 .rejoindretextecontainer{
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    left: 62%;
-    top: 4%;
-    height: 90%;
-    width: 35%;
+    height: 100%;
+    width: 30%;
+    left: 1%;
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-style: italic;
@@ -399,16 +475,7 @@ body{
 }
 
 .rejoindretexte{
-    font-size: 25px;
-}
-
-.pararejoindre{
-    position: absolute;
-    width: 230px;
-    height: 600px;
-    transform: skew(-15deg);
-    background: #373B4D;
-    left: 45%;
+    font-size: 23px;
 }
 
 .rejoindrebouton{
@@ -425,66 +492,458 @@ body{
 
 }
 
-/*============================== CAROUSSEL ==============================*/
+/*============================== RESPONSIVE ==============================*/
 
-.menuroulant{
-    position: relative;
-    overflow: hidden;
-    width: 30%;
-    height: 100%;
-    left: 27%;
+
+
+@media (max-width: 1666px){
+
     
+    .choisirtitre{
+        font-size: 45px;
+        top: 5%;
+    }
+    
+    .choisirtexte{
+        font-size: 20px;
+        width: 75%;
+    }
 }
 
-.slides-container{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    scroll-behavior: smooth;
+@media (max-width: 1596px){
+
+    .choisirtitre{
+    font-size: 40px;
+    }
+}
+
+@media (max-width: 1486px){
+
+    .choisirtexte{
+        font-size: 20px;
+        width: 70%;
+    }
+
+
+    .RGEcases{
+        position: relative;
+        top: 5%;
+        height: 45%;
+        font-size: 20px;
+    }
 
 }
 
-.slide{
-    position: relative;
-    margin-right: 119px;
-    margin-left: 119px;
-    height: 100%;
-    width: 100%;
+@media (max-width: 1425px){
+    .para{
+        display: none;
+    }
+
+    .historique{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .imghistorique{
+        width: 45%;
+        left: 0;
+        top: 0;
+        border: solid 10px #373B4D;
+    }
+    
+    .historiquetextecontainer{
+        top: 0;
+        left: 0;
+    }
+
+    .equipe{
+        justify-content: space-around;
+    }
+
+    .equipetextecontainer{
+        left: 0;
+    }
+    
+    .equipetitre{
+        color: #13A9DD;
+        text-decoration-line: underline;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .slider{
+        left: 0;
+        transform: scale(0.9);
+    }
+    
+
+    .choisir{
+        justify-content: space-around;
+    }
+    
+    .choisirlogodistribatcontainer{
+        left: 0;
+        transform: scale(0.85);
+        border: solid 10px #373B4D;
+
+    }
+
+    .parachoisir{
+        left: 0;
+    }
+    
+    .choisirtextecontainer{
+        left: 0;
+    }
+    
+    .certification{
+        justify-content: space-around;
+    }
+    
+    .certificationtextecontainer{
+        left: 0;
+    }
+
+    .certificationlogodistribatcontainer{
+        left: 0;
+        border: solid 10px #373B4D;
+        transform: scale(0.85);
+    }
+
+    .rejoindre{
+        justify-content: space-around;
+    }
+    
+    .imgrejoindre{
+        left: 0;
+    }
+    
+    .rejoindretextecontainer{
+        left: 0;
+        width: 50%;
+    }
 }
 
 
-.slide-arrow {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    background: transparent;
-    margin: auto;
-    border: none;
-    font-size: 10rem;
-    padding: 0;
-    cursor: pointer;
-    z-index: 2;
-}
- 
-#slide-arrow-prev {
-    left: 0;
-}
- 
-#slide-arrow-next {
-    right: 0;
+
+
+
+
+@media (max-width: 1270px){
+
+
+    .containerentreprise{
+        display: flex;
+        height: 2600px;
+        max-width: 1500px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .para{
+        display: none;
+    }
+
+    .historique{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 17% ;
+    }
+
+    .imghistorique{
+        width: 45%;
+        left: 0;
+        top: 0;
+    }
+    
+    .historiquetextecontainer{
+        top: 0;
+        left: 0;
+        width: 70%;
+    }
+
+    .equipe{
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .equipetextecontainer{
+        left: 0;
+        width: 70%;
+    }
+    
+    .equipetitre{
+        color: #13A9DD;
+        text-decoration-line: underline;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .slider{
+        height: 100%;
+        left: 0;
+        transform: scale(0.9);
+    }
+    
+
+    .choisir{
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .choisirlogodistribatcontainer{
+        left: 0;
+        transform: scale(0.85);
+    }
+
+
+    .choisirtitre{
+        font-size: 50px;
+        top: 5%;
+    }
+    
+    .choisirtexte{
+        font-size: 25px;
+        width: 75%;
+    }
+
+    .parachoisir{
+        left: 0;
+    }
+    
+    .choisirtextecontainer{
+        left: 0;
+        width: 85%;
+    }
+    
+    .certification{
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    
+    .certificationtextecontainer{
+        left: 0;
+        width: 85%;
+        height: 100%;
+    }
+
+    .certificationtitre{
+        font-size: 50px;
+    }
+    
+    .certificationtexte{
+        font-size: 25px;;
+    }
+
+    .certificationlogodistribatcontainer{
+        left: 0;
+        width: 20%;
+        height: 35%;
+    }
+
+    .certificationlogoRGE{
+        width: 100%;
+    }
+
+    .RGEcases{
+        position: relative;
+        top: 5%;
+        height: 40%;
+    }
+
+    .rejoindrebg{
+        height: 1150px;
+    }
+
+    .rejoindrecontainer{
+        height: 1200px;
+    }
+
+    .rejoindre{
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    
+    .imgrejoindre{
+        left: 0;
+        border: solid 10px #373B4D;
+    }
+    
+    .rejoindretextecontainer{
+        left: 0;
+        width: 70%;
+    }
+
+    .separateurphone{
+        display: block;
+        width: 80%;
+        height: 30px;
+        transform: skew(-30deg);
+        background: #373B4D;
+    }
 }
 
-.prev{
-    position: relative;
-    top: -4px;
+
+@media (max-width: 1000px){
+
+    .RGEcases{
+        position: relative;
+        top: 5%;
+        height: 40%;
+        font-size: 15px;
+    } 
+    
+    .RGEcontainer{
+        height: 750px;
+    }
+
+    .RGEtitre{
+        top: 15%;
+    }
 }
 
-.next{
-    position: relative;
-    top: -4px;
+@media (max-width: 700px){
+
+    .T{
+        font-size: 25px;
+    }
+
+    .t{
+        font-size: 20px;
+    }
+
+    .rejoindretextecontainer{
+        height: 70%;
+    }
+
+    .imgrejoindre{
+        left: 0;
+        top: 0%;
+        transform: scale(1.5);
+    }
+
+    .rejoindrecontainer{
+        height: 900px;
+    }
+
+    .RGEtitre{
+        top: 20%;
+    }
+
+    .RGEcases{
+        height: 40%;
+        font-size: 12px;
+    } 
+
+    .RGEcontainer{
+        height: 550px;
+    }
+
+    .RGErectangle{
+        top: 23%;
+    }
+}
+
+@media (max-width: 600px){
+
+    .RGEcases{
+        position: relative;
+        top: 5%;
+        height: 35%;
+        font-size: 10px;
+    } 
+    
+    .RGEcontainer{
+        height: 550px;
+    }
+
+}
+
+@media (max-width: 477px){
+
+    .T{
+        font-size: 22px;
+    }
+
+    .t{
+        font-size: 17px;
+    }
+
+    .certificationtexteprcision{
+        font-size: 13px;
+    }
+
+    .certificationlogodistribatcontainer{
+        height: 17%;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    .RGEcases{
+        position: relative;
+        top: 5%;
+        height: 30%;
+        font-size: 8px;
+    } 
+    
+    .RGEcontainer{
+        height: 500px;
+    }    
+
+    .rejoindrebouton{
+        font-size: 15px;
+    }
+
+    .rejoindrecontainer{
+        height: 850px;
+    }
+
+    .imgrejoindre{
+        left: 0;
+        top: 5%;
+        transform: scale(1.5);
+    }
+
+    .rejoindretextecontainer{
+        height: 55%;
+    }
+}
+
+
+@media (max-width: 360px){
+
+    .RGEcases{
+        position: relative;
+        top: 5%;
+        height: 25%;
+        font-size: 7px;
+    } 
+    
+    .RGEcontainer{
+        height: 500px;
+    }    
+
+    .rejoindrebouton{
+        font-size: 15px;
+    }
+
+    .rejoindrecontainer{
+        height: 750px;
+    }
+
+    .imgrejoindre{
+        left: 0;
+        top: 2%;
+        transform: scale(1.5);
+    }
+
+    .rejoindretextecontainer{
+        height: 70%;
+    }
 }

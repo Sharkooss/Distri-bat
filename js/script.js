@@ -1,29 +1,13 @@
+const slide = ["/photo/entreprise/car-1.jpg","/photo/entreprise/car-2.jpg","/photo/entreprise/car-3.jpg","/photo/entreprise/car-4.jpg","/photo/entreprise/car-5.jpg"];
+let numero = 0;
 
+function ChangeSlide(sens) {
+    numero = numero + sens;
+    if (numero < 0)
+        numero = slide.length - 1;
+    if (numero > slide.length - 1)
+        numero = 0;
+    document.getElementById("slide").src = slide[numero];
+}
 
-document.addEventListener("DOMContentLoaded", function() {
-
-    const slidesContainer = document.getElementById("slides-container");
-    const slide = document.querySelector(".slide");
-    const prevButton = document.getElementById("slide-arrow-prev");
-    const nextButton = document.getElementById("slide-arrow-next");
-    nextButton.addEventListener("click", () => {
-    const slideWidth = slide.clientWidth;
-    slidesContainer.scrollLeft += 500;
-    console.log(slidesContainer.scrollLeft)
-    console.log(slideWidth)
-    if (slidesContainer.scrollLeft==2000)
-        slidesContainer.scrollLeft=0
-    
-    });
-    
-    prevButton.addEventListener("click", () => {
-    const slideWidth = slide.clientWidth;
-    slidesContainer.scrollLeft -= 500;
-    });
-
-    click_event = new CustomEvent('click');
-    setInterval(() => {
-        nextButton.dispatchEvent(click_event)
-    }, 1750);
-
-});
+setInterval("ChangeSlide(1)", 2000);
