@@ -6,9 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 
-*{
-    border: dashed 1px red;
-}
+
 
 body{
     margin: 0;
@@ -27,8 +25,9 @@ body{
 .banniere-block{
     position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
-    height: 2315px;
+    height: 3000px;
     background: #13A9DD;
 }
 
@@ -68,6 +67,10 @@ body{
 
 .bleu{
     color: #13A9DD;
+}
+
+.separateurphone{
+    display: none;
 }
 
 /*============================== HISTORIQUE ==============================*/
@@ -171,8 +174,10 @@ body{
     align-items: center;
     overflow: hidden;
     width: 262px;
-    height: 100%;
+    height: 95%;
     left: 37%;
+    border: solid 10px #373B4D;
+    border-radius: 10px;
 }
 
 
@@ -281,7 +286,7 @@ body{
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    left: 5%;
+    left: 4%;
     width: 38%;
     height: 100%;
     text-align: center;
@@ -334,7 +339,7 @@ body{
 .RGEcontainer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     position: relative;
     display: block;
     height: 1050px;
@@ -350,6 +355,7 @@ body{
     top: 13%;
     color: aliceblue;
     font-size: 50px;
+    font-style: italic;
 }
 
 .RGErectangle{
@@ -374,24 +380,26 @@ body{
 .RGEcases{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     position: relative;
     border-radius: 20px;
     max-width: 500px;
-    width: 30%;
-    height: 70%;
+    width: 25%;
+    height: 60%;
     background: #13A9DD;
-}
-
-.RGEcasestexte{
     position: relative;
-    font-size: 175%;
+    font-size: 30px;
     font-weight: bold;
     font-style: italic;
     color: aliceblue;
-    margin: 50px;
+    padding: 20px;
     text-align: center;
 }
+
+
+
+
 
 /*============================== REJOINDRE ==============================*/
 
@@ -448,7 +456,7 @@ body{
 .rejoindretextecontainer{
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     height: 100%;
@@ -516,13 +524,12 @@ body{
         width: 70%;
     }
 
-    .RGEcasestexte{
-        font-size: 20px;
-    }
+
     .RGEcases{
         position: relative;
         top: 5%;
-        height: 55%;
+        height: 45%;
+        font-size: 20px;
     }
 
 }
@@ -542,6 +549,7 @@ body{
         width: 45%;
         left: 0;
         top: 0;
+        border: solid 10px #373B4D;
     }
     
     .historiquetextecontainer{
@@ -577,6 +585,8 @@ body{
     .choisirlogodistribatcontainer{
         left: 0;
         transform: scale(0.85);
+        border: solid 10px #373B4D;
+
     }
 
     .parachoisir{
@@ -597,7 +607,7 @@ body{
 
     .certificationlogodistribatcontainer{
         left: 0;
-        
+        border: solid 10px #373B4D;
         transform: scale(0.85);
     }
 
@@ -612,5 +622,328 @@ body{
     .rejoindretextecontainer{
         left: 0;
         width: 50%;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 1270px){
+
+
+    .containerentreprise{
+        display: flex;
+        height: 2600px;
+        max-width: 1500px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .para{
+        display: none;
+    }
+
+    .historique{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 17% ;
+    }
+
+    .imghistorique{
+        width: 45%;
+        left: 0;
+        top: 0;
+    }
+    
+    .historiquetextecontainer{
+        top: 0;
+        left: 0;
+        width: 70%;
+    }
+
+    .equipe{
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .equipetextecontainer{
+        left: 0;
+        width: 70%;
+    }
+    
+    .equipetitre{
+        color: #13A9DD;
+        text-decoration-line: underline;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .slider{
+        height: 100%;
+        left: 0;
+        transform: scale(0.9);
+    }
+    
+
+    .choisir{
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .choisirlogodistribatcontainer{
+        left: 0;
+        transform: scale(0.85);
+    }
+
+
+    .choisirtitre{
+        font-size: 50px;
+        top: 5%;
+    }
+    
+    .choisirtexte{
+        font-size: 25px;
+        width: 75%;
+    }
+
+    .parachoisir{
+        left: 0;
+    }
+    
+    .choisirtextecontainer{
+        left: 0;
+        width: 85%;
+    }
+    
+    .certification{
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    
+    .certificationtextecontainer{
+        left: 0;
+        width: 85%;
+        height: 100%;
+    }
+
+    .certificationtitre{
+        font-size: 50px;
+    }
+    
+    .certificationtexte{
+        font-size: 25px;;
+    }
+
+    .certificationlogodistribatcontainer{
+        left: 0;
+        width: 20%;
+        height: 35%;
+    }
+
+    .certificationlogoRGE{
+        width: 100%;
+    }
+
+    .RGEcases{
+        position: relative;
+        top: 5%;
+        height: 40%;
+    }
+
+    .rejoindrebg{
+        height: 1150px;
+    }
+
+    .rejoindrecontainer{
+        height: 1200px;
+    }
+
+    .rejoindre{
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    
+    .imgrejoindre{
+        left: 0;
+        border: solid 10px #373B4D;
+    }
+    
+    .rejoindretextecontainer{
+        left: 0;
+        width: 70%;
+    }
+
+    .separateurphone{
+        display: block;
+        width: 80%;
+        height: 30px;
+        transform: skew(-30deg);
+        background: #373B4D;
+    }
+}
+
+
+@media (max-width: 1000px){
+
+    .RGEcases{
+        position: relative;
+        top: 5%;
+        height: 40%;
+        font-size: 15px;
+    } 
+    
+    .RGEcontainer{
+        height: 750px;
+    }
+
+    .RGEtitre{
+        top: 15%;
+    }
+}
+
+@media (max-width: 700px){
+
+    .T{
+        font-size: 25px;
+    }
+
+    .t{
+        font-size: 20px;
+    }
+
+    .rejoindretextecontainer{
+        height: 70%;
+    }
+
+    .imgrejoindre{
+        left: 0;
+        top: 0%;
+        transform: scale(1.5);
+    }
+
+    .rejoindrecontainer{
+        height: 900px;
+    }
+
+    .RGEtitre{
+        top: 20%;
+    }
+
+    .RGEcases{
+        height: 40%;
+        font-size: 12px;
+    } 
+
+    .RGEcontainer{
+        height: 550px;
+    }
+
+    .RGErectangle{
+        top: 23%;
+    }
+}
+
+@media (max-width: 600px){
+
+    .RGEcases{
+        position: relative;
+        top: 5%;
+        height: 35%;
+        font-size: 10px;
+    } 
+    
+    .RGEcontainer{
+        height: 550px;
+    }
+
+}
+
+@media (max-width: 477px){
+
+    .T{
+        font-size: 22px;
+    }
+
+    .t{
+        font-size: 17px;
+    }
+
+    .certificationtexteprcision{
+        font-size: 13px;
+    }
+
+    .certificationlogodistribatcontainer{
+        height: 17%;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    .RGEcases{
+        position: relative;
+        top: 5%;
+        height: 30%;
+        font-size: 8px;
+    } 
+    
+    .RGEcontainer{
+        height: 500px;
+    }    
+
+    .rejoindrebouton{
+        font-size: 15px;
+    }
+
+    .rejoindrecontainer{
+        height: 850px;
+    }
+
+    .imgrejoindre{
+        left: 0;
+        top: 5%;
+        transform: scale(1.5);
+    }
+
+    .rejoindretextecontainer{
+        height: 55%;
+    }
+}
+
+
+@media (max-width: 360px){
+
+    .RGEcases{
+        position: relative;
+        top: 5%;
+        height: 25%;
+        font-size: 7px;
+    } 
+    
+    .RGEcontainer{
+        height: 500px;
+    }    
+
+    .rejoindrebouton{
+        font-size: 15px;
+    }
+
+    .rejoindrecontainer{
+        height: 750px;
+    }
+
+    .imgrejoindre{
+        left: 0;
+        top: 2%;
+        transform: scale(1.5);
+    }
+
+    .rejoindretextecontainer{
+        height: 70%;
     }
 }
