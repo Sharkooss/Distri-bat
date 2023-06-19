@@ -1,5 +1,6 @@
 
-.footer{
+
+.footer-wide{
     position: relative;
     z-index: 99;
     display: grid;
@@ -252,4 +253,128 @@
     text-decoration: underline;
     font-family: 'inter', sans-serif;
     transition: opacity 0.3s ease;
+}
+
+.footer-responsive{
+    position: relative;
+    display: none;
+    height: 100%;
+    background-color: #373B4D;
+}
+
+.footer-title-responsive{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    font-size: 14px;
+    font-family: 'annapolis';
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.underline{
+    height: 5px;
+    width: 50%;
+    background-color: aliceblue;
+}
+
+.left-footer{
+    width: 100%;
+}
+
+.left-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.contact-item{
+    display: flex;
+    width: 100%;
+}
+
+.left-mail,
+.left-tel{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 14px;
+    color: aliceblue;
+    font-family: 'inter', sans-serif;
+}
+
+.left-reseau{
+    margin: 15px;
+}
+
+
+.left-tel-img{
+    width: 30%;
+    height: 35px;
+}
+
+
+.middle-home-img{
+    width: 50px;
+    height: 35px;
+}
+
+.middle-siege{
+    display: flex;
+    margin: 25px 0;
+    align-items: center;
+    justify-content: center;
+}
+.middle-texte h2{
+    font-size: 15px;
+}
+
+.middle-texte p{
+    font-size: 13px;
+}
+.middle-texte h2,
+.middle-texte p{
+   margin: 0;
+   color: aliceblue;  
+   font-family: 'inter', sans-serif;  
+}
+
+.right-legales{
+    color: aliceblue;
+    font-family:'inter', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+
+}
+
+
+@media (max-width: 1200px){
+    .footer-wide{
+        display: none;
+    }
+    .footer-responsive{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .left-footer,
+    .middle-footer,
+    .right-footer{
+        flex: 1 0 33.33%;
+        min-width: 300px;
+    }
+}
+
+@media(max-width:320px){
+    .footer-responsive{
+        padding: 0;
+    }
+    .right-legales h2{
+        margin-bottom: 0;
+    }
 }

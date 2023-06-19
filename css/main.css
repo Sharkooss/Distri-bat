@@ -11,6 +11,7 @@
 
 body{
     margin: 0;
+    height:3600px;
 }
 
 html{
@@ -84,6 +85,7 @@ html{
     align-items: center;
     width: 100%;
 }
+
 
 /* ====CENTER==== */
 
@@ -796,6 +798,7 @@ html{
     line-height: 35px;
 }
 .footer-wrapper {
+    position: relative;
     top: -100px;
     max-height: 100vh;
     display: flex;
@@ -859,6 +862,10 @@ html{
     .gerant-texte{
         line-height: 25px;
     }
+
+    .footer-wrapper{
+        top: -150px;
+    }
     
 }
 
@@ -875,6 +882,9 @@ html{
 }
 
 @media (max-width: 1200px){
+    body{        
+        height:3600px;
+    }
     .block-gris{
         font-size: 14px;
     }
@@ -898,6 +908,11 @@ html{
     }
     .transi-conseil-check img{
         padding-right: 15px;
+    }
+    .footer-wrapper{
+        position: relative;
+        height: 270px;
+        top: -200px;
     }
 }
 
@@ -974,6 +989,12 @@ html{
     }
 }
 
+@media(max-width:910px){
+    .footer-wrapper{
+        height: 400px;
+    }
+}
+
 @media (max-width: 900px){
     .container-caroussel{
         height: 200px;
@@ -1042,6 +1063,10 @@ html{
 
     .banniere-block{
         height: 3700px;
+    }
+
+    .footer-wrapper{
+        top: -400px;
     }
 
 }
@@ -1149,6 +1174,12 @@ html{
     }
 }
 
+@media (max-width:608px){
+    .footer-wrapper{
+        height: 550px;
+    }
+}
+
 @media (max-width:600px){
     .priorite-container{
         height: 750px;
@@ -1230,7 +1261,10 @@ html{
 
 @media (max-width: 403px){
     .transi-contact-droite{
-        padding: 50px 0;
+        margin: 50px 5px;
+    }
+    .transi-contact-gauche{
+        margin: 50px 5px;
     }
 }
 
