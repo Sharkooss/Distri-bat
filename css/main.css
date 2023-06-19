@@ -1211,7 +1211,7 @@ html{
 
 @media (max-width:500px) {
     .prestation-container{
-        height: 1100px;
+        height: 1200px;
         justify-content: inherit;
     }
     .gerant-title{
