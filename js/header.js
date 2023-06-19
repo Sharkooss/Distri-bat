@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', function() {
     logoText.textContent = 'DISTRI-BAT';
 
     function handleScroll() {
-        if ((window.pageYOffset > 0 && isAtTop) || window.innerWidth < 1500) {
+        if ((window.pageYOffset > 0 && isAtTop) || window.innerWidth < 1501) {
             isAtTop = false;
 
             navInfo.classList.add('scrolled-info');
