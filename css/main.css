@@ -796,6 +796,7 @@ html{
     line-height: 35px;
 }
 .footer-wrapper {
+    top: -100px;
     max-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -809,6 +810,39 @@ html{
     }
     .prestations-block{
         width: 95%;
+    }
+
+    .banniere-texte{
+        top: 50px;
+    }
+    .banniere-block{
+        height: 3500px;
+    }
+
+    .index-caroussel{
+        top: 150px;
+    }
+
+    .presentation-container{
+        top: 25px;
+    }
+    .prestation-container{
+        top: 0px;
+    }
+    
+    .priorite-container{
+        top:-100px;
+    }
+    .transi-contact-container{
+        top: -50px;
+    }
+
+    .transi-conseil-container{
+        top: -175px;
+    }
+
+    .gerant-container{
+        top: -250px;
     }
     
     .prestation-cartes-1,
@@ -953,7 +987,7 @@ html{
     }
     .prestation-container{
         height: 800px;
-        top: 0;
+        top: -150px;
     }
     .prestations-block{
         height: 800px;
@@ -973,11 +1007,11 @@ html{
     }
 
     .presentation-container{
-        top: 50px;
+        top: -100px;
     }
 
     .transi-contact-container{
-        top: -70px;
+        top: -230px;
     }
 
     .priorite-block-textDo{
@@ -991,15 +1025,15 @@ html{
     }
 
     .priorite-container{
-        top: -150px;
+        top: -300px;
     }
 
     .transi-conseil-container{
-        top:-250px;
+        top:-400px;
     }
 
     .gerant-container{
-        top: -350px;
+        top: -500px;
     }
 
     .gerant-logo img{
@@ -1007,7 +1041,7 @@ html{
     }
 
     .banniere-block{
-        height: 4000px;
+        height: 3700px;
     }
 
 }
@@ -1180,6 +1214,17 @@ html{
     }
     .presentation-texte1{
         font-size: 12px;
+    }
+}
+
+@media (max-width:420px){
+    .priorite-block-textDo{
+        padding-top: 0;
+        font-size: 11px;
+    }
+    .priorite-block-textGa{
+        padding-top: 0;
+        font-size: 14px;
     }
 }
 
