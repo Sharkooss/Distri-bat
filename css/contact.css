@@ -6,9 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 
-*{
-    border: 1px dashed red;
-}
+
 
 body{
     overflow-x: hidden;
@@ -25,6 +23,7 @@ body{
     justify-content: center;
     flex-direction: column;
     width: 50%;
+    top: 75px;
     height: 100px;
     color: aliceblue;
     font-family: 'annapolis';    
@@ -357,6 +356,14 @@ h1{
         height: 3600px;
     }
 
+}
+
+
+@media (max-width: 1500px){
+
+    .banniere-texte{
+        top: 0;
+    }
 }
 
 @media (max-width: 1240px){

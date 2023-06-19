@@ -7,10 +7,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 
 
-
 body{
     margin: 0;
     z-index: -1;
+    background: #13A9DD;
 }
 
 /*========== BANNIERE ===========*/
@@ -22,27 +22,30 @@ body{
     max-width: 100%;
 }
 
-.banniere-block{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3000px;
-    background: #13A9DD;
-}
-
 .banniere-texte{
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    top: 175px;
-    left: 25%;
     width: 50%;
     height: 100px;
+    top: 75px;
     color: aliceblue;
     font-family: 'annapolis';    
+}
+
+.banniere-block{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 310px;
+    background: #13A9DD;
 }
 
 .banniere-titre{
@@ -534,6 +537,15 @@ body{
 
 }
 
+@media (max-width: 1500px){
+
+    .banniere-texte{
+        top: 0;
+    }
+}
+
+
+
 @media (max-width: 1425px){
 
     .rejoindrecontainer{
@@ -796,6 +808,13 @@ body{
     }
 }
 
+@media (max-width: 1140px){
+
+    .banniere-titre{
+        font-size: 35px;    
+    }
+}
+
 
 @media (max-width: 1000px){
 
@@ -857,6 +876,19 @@ body{
     }
 }
 
+@media (max-width: 950px){
+
+    .banniere-titre{
+        font-size: 30px;    
+    }
+}
+
+@media (max-width: 840px){
+
+    .banniere-texte{
+        width: 95%;
+    }
+}
 
 
 @media (max-width: 477px){
@@ -927,6 +959,23 @@ body{
     }
 }
 
+@media (max-width: 580px){
+
+    .banniere-texte{
+        width: 95%;
+    }
+
+    
+    .banniere-titre{
+        font-weight: initial;
+        font-size: 25px;    
+    }
+
+    .banniere-soustitre{
+        font-size: 15px;
+    }
+}
+
 
 @media (max-width: 445px){
     .RGEcontainer{
@@ -972,3 +1021,35 @@ body{
         height: 70%;
     }
 }
+
+@media (max-width: 400px){
+
+    .content{
+        font-size: 17px;
+    }
+
+    .contactsvg{
+        font-size: 23px;
+        width: 30px;
+    }
+
+    .coocontainer{
+        font-size: 8px;
+    }
+
+}
+
+@media (max-width: 380px){
+
+    .banniere-titre{
+        font-weight: initial;
+        font-size: 17px;    
+    }
+
+    .banniere-soustitre{
+        font-size: 7px;
+    }
+}
+
+
+
