@@ -529,13 +529,13 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     height: 550px;
     width: 90%;
     top: 20px;
     background-color: #D8EBF0;
     border-radius: 100px;
     border: solid 44px white;
+    padding: 15px 0px;
 }
 
 .priorite-title {
@@ -554,7 +554,7 @@ html{
 .priorite-title::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom:-10px;
   left: 0;
   width: 100%;
   height: 3px;
@@ -1183,14 +1183,14 @@ html{
 @media (max-width:600px){
     .priorite-container{
         height: 750px;
-        justify-content: inherit;
     }
     .priorite-block-content{
         margin-top: 50px;
         height: fit-content;
     }
     .priorite-title{
-        margin-top: 50px;
+        width: 70%;
+        text-align: center;
     }
     .priorite-block-textGa{
         height: 500px;
@@ -1214,6 +1214,11 @@ html{
         height: 1200px;
         justify-content: inherit;
     }
+
+    .presentation-flex{
+        margin-top: 25px;
+    }
+
     .gerant-title{
         text-align: center;
     }
@@ -1257,14 +1262,19 @@ html{
         padding-top: 0;
         font-size: 14px;
     }
+    .priorite-title{
+        text-align: center;
+    }
 }
 
 @media (max-width: 403px){
     .transi-contact-droite{
-        margin: 50px 5px;
+        display: none;
     }
     .transi-contact-gauche{
-        margin: 50px 5px;
+        width: 95%;
+        padding: 0;
+        margin: 25px 0 0 0;
     }
 }
 
@@ -1280,3 +1290,21 @@ html{
 @media (max-width: 380px){
 
 }
+
+@media (max-width: 365px){
+    .priorite-title{
+        text-align: center;
+    }
+}
+
+@media (max-width: 340px){
+    .presentation-texte2,
+    .presentation-texte1{
+        font-size: 10px;
+    }
+    .presentation-block-gris{
+        width: 200px;
+    }
+}
+
+
