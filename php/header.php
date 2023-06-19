@@ -11,6 +11,7 @@
             <a href="\php\contact.php" class="nav-contact">Contact</a>
         </div>
     </div>
+    <div class="nav-toggler"><img src="/photo/logo/bars-solid.svg" alt=""></div>
 </div>
 <div class="banniere-block">
     <div class="banniere-texte">

@@ -6,6 +6,9 @@ body{
     margin: 0;
 }
 
+.nav-main{
+    overflow: hidden;
+}
 
 .nav-info {
     position: fixed;
@@ -100,6 +103,15 @@ body{
     transform: scale(1);
 }
 
+.nav-toggler{
+    display: none;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    z-index: 100;
+    padding: 25px;
+}
+
 @media (max-width:1500px) {
     .nav-menu{
         font-size: 16px;
@@ -119,5 +131,49 @@ body{
     .nav-menu{
         font-size: 13px;
         width: 65%;
+    }
+}
+
+@media (max-width: 850px){
+    .nav-logo img{
+        display: none;
+    }
+    .logo-text{
+        display: none;
+    }
+    .nav-menu{
+        margin-left: 0;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
+
+@media (max-width: 580px){
+    .nav-info.scrolled-info {        
+        display: none;
+        height: 150px;
+        width: 100%;
+    }
+    .nav-info {
+      transition: transform 0.5s ease;
+    }
+    
+    .nav-info.toggled {
+      transform: translateY(0);
+      animation: none;
+      display: inherit;
+    }
+    .nav-menu{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+    }
+    .nav-toggler{
+        display: inherit;
+    }
+    .nav-toggler.toggled{
+        z-index: 100;
     }
 }
