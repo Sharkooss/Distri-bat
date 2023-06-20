@@ -1150,6 +1150,11 @@ html{
         margin: 15px;
         padding: 0;
     }
+
+    .container-caroussel{
+        height: 150px;
+    }
+
 }
 
 @media (max-width:608px){
@@ -1203,6 +1208,9 @@ html{
     }
     .banniere-block{
         height: 4500px;
+    }
+    .container-caroussel{
+        height: 100px;
     }
 }
 
@@ -1311,6 +1319,9 @@ html{
     }
 
     .transi-conseil-text{
+        font-size: 16px;
+    }
+    .responsive-texte{
         font-size: 16px;
     }
 }
