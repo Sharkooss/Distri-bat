@@ -66,10 +66,11 @@ body{
 .activite-grid{
     position: relative;
     display: grid;
-    grid-template-columns: repeat(4, 1FR);
+    grid-template-columns: repeat(4, minmax(325px, 450px));
     grid-template-rows: repeat(2, 300px);
     margin-bottom: 10px;
     text-align: center;
+    justify-content: center;
 }   
 
 .card img{
@@ -181,3 +182,131 @@ body{
     display: flex;
     flex-direction: column;
   }
+
+@media (max-width: 1500px) {
+    .banniere-texte{
+        top: 75px;
+    }
+    .activite-main-container{
+        top: 210px;
+    }
+    .transi-contact-main{
+      top: 250px;
+    }
+    .footer-wrapper{
+        top: 300px;
+    }
+    .banniere-block{
+        height: 1300px;
+    }
+}
+
+@media (max-width: 1330px) {
+  .activite-grid {
+      grid-template-columns: repeat(2, minmax(325px, 450px));
+      grid-template-rows: repeat(4, 300px);
+  }
+  .activite-main-container{
+    height: 1200px;
+  }
+  .banniere-block{
+      height: 1900px;
+  }
+}
+
+@media(max-width:900px){
+    .transi-contact-text{
+        display: none;
+    }
+
+    .transi-contact-btn-container{
+        height: 100%;
+        flex-direction: column;
+    }
+    .transi-contact{
+        right: 0;
+        width: 25%;
+    }
+    .transi-text{
+        width: 70%;
+    }
+}
+
+@media(max-width:660px){
+    .activite-grid{
+        grid-template-columns: repeat(2, 225px);
+        grid-template-rows: repeat(4, 200px);
+    }
+    .activite-grid-btn{
+        display: none;
+    }
+    .activite-grid-title{
+        font-size: 12px;
+    }
+    .activite-grid-text{
+        width: 95%;
+    }
+    .activite-main-container{
+        height: 800px;
+    }
+    .banniere-block{
+        height: 1600px;
+    }
+    .card{
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width:460px){
+    .activite-grid{
+        grid-template-columns: repeat(2, 175px);
+        grid-template-rows: repeat(4, 150px);
+    }
+    .activite-grid-text{
+        font-size: 14px;
+    }
+}
+
+@media(max-width:430px){
+    .transi-contact{
+        display: none;
+    }
+    
+    .transi-text{
+        width: 95%;
+    }
+    .activite-grid-title{
+        font-size: 9.5px;
+    }
+    .activite-main-container{
+        height: 600px;
+    }
+}
+
+@media(max-width:350px){
+    .activite-grid{
+        grid-template-columns: repeat(2, 140px);
+        grid-template-rows: repeat(4, 115px);
+    }
+    .activite-grid-title h2{
+        margin: 0;
+        font-size: 0.7rem;
+    }
+    .activite-grid-text{
+        font-size: 10px;
+    }
+    
+    .activite-main-container{
+        height: 460px;
+    }
+    .transi-text-haut,
+    .transi-text-bas{
+        font-size: 12px;
+    }
+    .transi-contact-main{
+        height: 150px;
+    }
+    .banniere-block{
+        height: 1000px;
+    }
+}
