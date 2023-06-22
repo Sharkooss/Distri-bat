@@ -1,29 +1,66 @@
-var counter = 0;
-var intervalId;
+// Récupérer les éléments nécessaires
+const carouselPrevs = document.querySelectorAll(".carousel-prev");
+const carouselNexts = document.querySelectorAll(".carousel-next");
+const slides = document.querySelectorAll(".slides");
+const slideWidths = [500, 500, 1000, 1000]; // Largeurs des slides en pixels
+let currentPosition = [0, 0, 0, 0]; // Positions courantes des carrousels
+let autoSlideIntervals = [null, null, null, null]; // Intervals pour le défilement automatique
 
-function startSlider() {
-  intervalId = setInterval(function() {
-    var radioId = 'radio' + (counter % radios.length);
-    radios[counter % radios.length].checked = true;
-    counter++;
+// Fonction pour le défilement vers la gauche
+function slideToLeft(index) {
+  currentPosition[index] += slideWidths[index];
+  if (currentPosition[index] > 0) {
+    currentPosition[index] = -(slideWidths[index] * (slides[index].childElementCount - 1));
+  }
+  slides[index].style.transform = `translateX(${currentPosition[index]}px)`;
+  resetAutoSlideTimer(index);
+}
+
+// Fonction pour le défilement vers la droite
+function slideToRight(index) {
+  currentPosition[index] -= slideWidths[index];
+  if (currentPosition[index] < -(slideWidths[index] * (slides[index].childElementCount - 1))) {
+    currentPosition[index] = 0;
+  }
+  slides[index].style.transform = `translateX(${currentPosition[index]}px)`;
+  resetAutoSlideTimer(index);
+}
+
+// Fonction pour réinitialiser le timer de défilement automatique
+function resetAutoSlideTimer(index) {
+  clearInterval(autoSlideIntervals[index]);
+  autoSlideIntervals[index] = setInterval(() => {
+    slideToRight(index);
   }, 5000);
 }
 
-function resetSlider(index) {
-  clearInterval(intervalId);
-  counter = index;
-  startSlider();
-}
-
-var radios = document.querySelectorAll('input[type="radio"]');
-startSlider();
-
-for (var i = 0; i < radios.length; i++) {
-  radios[i].addEventListener('change', function() {
-    var index = Array.from(radios).indexOf(this);
-    resetSlider(index);
+// Définir les écouteurs d'événements pour les flèches de navigation
+carouselPrevs.forEach((prev, index) => {
+  prev.addEventListener("click", () => {
+    slideToLeft(index);
   });
+});
+
+carouselNexts.forEach((next, index) => {
+  next.addEventListener("click", () => {
+    slideToRight(index);
+  });
+});
+
+// Fonction pour le défilement automatique toutes les 3 secondes
+function autoSlide(index) {
+  autoSlideIntervals[index] = setInterval(() => {
+    slideToRight(index);
+  }, 5000);
 }
+
+// Déclencher le défilement automatique pour chaque carrousel
+carouselNexts.forEach((next, index) => {
+  autoSlide(index);
+});
+
+
+
 
 
 
