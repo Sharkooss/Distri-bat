@@ -22,53 +22,34 @@
         <div class="ravalement-container">
             <div class="ravalement-container-title"><h2>Ravalement de Facades</h2></div>
             <div class="ravalement-caroussel-container">
-                <div class="ravalement-caroussel left shadow">
-
-                    <div class="slides">
-
-                        <input type="radio" name="radio-btn" id="radio1">
-                        <input type="radio" name="radio-btn" id="radio2">
-                        <input type="radio" name="radio-btn" id="radio3">
-                        <input type="radio" name="radio-btn" id="radio4">
-
-                        <div class="slide first">
-                          <img src="/photo/realisation/car1/1.jpg" alt="">
-                        </div>
-                        <div class="slide">
-                          <img src="/photo/realisation/car1/2.jpg" alt="">
-                        </div>
-                        <div class="slide">
-                          <img src="/photo/realisation/car1/3.jpg" alt="">
-                        </div>
-                        <div class="slide">
-                          <img src="/photo/realisation/car1/4.jpg" alt="">
-                        </div>
-                        <!--slide images end-->
-                        <!--automatic navigation start-->
-                        <div class="navigation-auto">
-                          <div class="auto-btn1"></div>
-                          <div class="auto-btn2"></div>
-                          <div class="auto-btn3"></div>
-                          <div class="auto-btn4"></div>
-                        </div>
-                    </div>
-
-                    <div class="navigation-manual">
-                      <label for="radio1" class="manual-btn"></label>
-                      <label for="radio2" class="manual-btn"></label>
-                      <label for="radio3" class="manual-btn"></label>
-                      <label for="radio4" class="manual-btn"></label>
-                    </div>
-
+              <div class="ravalement-caroussel left shadow">
+                <div class="slides">
+                  <div class="slide first">
+                    <img src="/photo/realisation/car1/1.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                    <img src="/photo/realisation/car1/2.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                    <img src="/photo/realisation/car1/3.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                    <img src="/photo/realisation/car1/4.jpg" alt="">
+                  </div>
+                  <!-- slide images end -->                  
                 </div>
+                <div class="carousel-navigation">
+                    <div class="carousel-prev">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="carousel-next">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+              </div>
                 <div class="ravalement-caroussel right shadow">
 
                     <div class="slides">
-
-                        <input type="radio" name="radio-btn" id="radio5">
-                        <input type="radio" name="radio-btn" id="radio6">
-                        <input type="radio" name="radio-btn" id="radio7">
-                        <input type="radio" name="radio-btn" id="radio8">
 
                         <div class="slide first">
                           <img src="/photo/realisation/car2/1.jpg" alt="">
@@ -83,22 +64,16 @@
                           <img src="/photo/realisation/car2/4.jpg" alt="">
                         </div>
                         <!--slide images end-->
-                        <!--automatic navigation start-->
-                        <div class="navigation-auto">
-                          <div class="auto-btn5"></div>
-                          <div class="auto-btn6"></div>
-                          <div class="auto-btn7"></div>
-                          <div class="auto-btn8"></div>
-                        </div>
                     </div>
 
-                    <div class="navigation-manual">
-                      <label for="radio5" class="manual-btn"></label>
-                      <label for="radio6" class="manual-btn"></label>
-                      <label for="radio7" class="manual-btn"></label>
-                      <label for="radio8" class="manual-btn"></label>
+                    <div class="carousel-navigation">
+                      <div class="carousel-prev">
+                        <i class="fa-solid fa-arrow-left"></i>
+                      </div>
+                      <div class="carousel-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </div>
                     </div>
-
                 </div>
             </div>        
         </div>
@@ -106,7 +81,7 @@
 
     <div class="isolation-center-container">
       <div class="isolation-container">
-        <div class="isolation-title">Isolationthermique par l'extérieur</div>
+        <div class="isolation-title">Isolation thermique par l'extérieur</div>
         <div class="av-ap-container">
           <h2 class="scroll-title">Avant</h2>
           <h2 class="scroll-title">Après</h2>
@@ -116,12 +91,8 @@
             <div class="parallelogram"></div>
             <div class="isolation-caroussel shadow">
 
+              <!--slide images start-->
               <div class="slides">
-                <input type="radio" name="radio-btn" id="radio9">
-                <input type="radio" name="radio-btn" id="radio10">
-                <input type="radio" name="radio-btn" id="radio11">
-                <input type="radio" name="radio-btn" id="radio12">
-
                 <div class="slide-isolation first">
                   <img src="\photo\realisation\av-ap\av-ap1.png" alt="">
                 </div>
@@ -134,29 +105,23 @@
                 <div class="slide-isolation">
                   <img src="\photo\realisation\av-ap\av-ap4.png" alt="">
                 </div>
-                <!--slide images end-->
-                <!--automatic navigation start-->
-                <div class="navigation-auto-isolation">
-                  <div class="auto-btn9"></div>
-                  <div class="auto-btn10"></div>
-                  <div class="auto-btn11"></div>
-                  <div class="auto-btn12"></div>
-                </div>
-              
-
-                <div class="navigation-manual-isolation">
-                  <label for="radio9" class="manual-btn"></label>
-                  <label for="radio10" class="manual-btn"></label>
-                  <label for="radio11" class="manual-btn"></label>
-                  <label for="radio12" class="manual-btn"></label>
-                </div>               
               </div>
+              <!--slide images end-->
+
+              <div class="carousel-navigation-duo-av-ap">
+                <div class="carousel-prev large">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="carousel-next large">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>              
             </div>
           </div>
-
         </div>
       </div>
     </div>
+
 
     <div class="renovation-center-container">
       <div class="renovation-container">
@@ -170,11 +135,7 @@
             <div class="parallelogram"></div>
             <div class="renovation-caroussel shadow">
               <div class="slides">
-                <input type="radio" name="radio-btn" id="radio13">
-                <input type="radio" name="radio-btn" id="radio14">
-                <input type="radio" name="radio-btn" id="radio15">
-                <input type="radio" name="radio-btn" id="radio16">
-
+                
                 <div class="slide-renovation first">
                   <img src="\photo\realisation\av-ap\av-ap5.png" alt="">
                 </div>
@@ -186,22 +147,18 @@
                 </div>
                 <div class="slide-renovation">
                   <img src="\photo\realisation\av-ap\av-ap8.png" alt="">
-                </div>
-                <div class="navigation-auto-renovation">
-                  <div class="auto-btn13"></div>
-                  <div class="auto-btn14"></div>
-                  <div class="auto-btn15"></div>
-                  <div class="auto-btn16"></div>
-                </div>
-              
-
-                <div class="navigation-manual-renovation">
-                  <label for="radio13" class="manual-btn"></label>
-                  <label for="radio14" class="manual-btn"></label>
-                  <label for="radio15" class="manual-btn"></label>
-                  <label for="radio16" class="manual-btn"></label>
-                </div>
+                </div>              
               </div>
+
+              <div class="carousel-navigation-duo-av-ap">
+                <div class="carousel-prev large">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="carousel-next large">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div> 
+
             </div>
           </div>
         </div>
