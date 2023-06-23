@@ -178,13 +178,13 @@
             Qualification <span class="bleu">RGE QUALIBAT</span> 2020, 2021, 2022 Garantie décennale.
             </p>
         </div>
-        <div class="transi-conseil-check"><img src="/photo/logo/check.png" alt=""></div>
+        <div class="transi-conseil-check"><img src="/photo/check.png" alt=""></div>
     </div>
 
     <div class="centering-contaner-global">
         <div class="gerant-container">
             <div class="gerant-element">
-                <div class="gerant-logo"><img src="/photo/logo/gerantlogo.jpg" alt="image"></div>
+                <div class="gerant-logo"><img src="/photo/gerantlogo.jpg" alt="image"></div>
                 <div class="gerant-quote"><img src="/photo/quote.png" alt=""></div>
                 <div class="gerant-texte-block">
                     <div class="gerant-title"><h2>Le mot du gérant</h2></div>
