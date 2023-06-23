@@ -64,7 +64,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 function redirectToCGU() {
-  window.location.href = 'php/CGU.php';
+  window.location.href = 'CGU.php';
 }
 
 

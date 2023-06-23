@@ -23,31 +23,64 @@
 
     <div class="activite-main-container">
         <div class="activite-grid">
-            <div class="card"><img src="/photo/activite/facade.jpg" alt="" class='parallaximg'></div>
+
             <div class="card">
-                <div class="activite-grid-title"><h2>Façades</h2></div>
-                <div class="activite-grid-text"><p>Ravalement, Décoratif D2/D3, imperméabilisation, enduit épais, ...</p></div>
-                <div class="activite-grid-btn">Demander un devis</div>
+                <img src="/photo/activite/facade.jpg" alt="" class='parallaximg'>
             </div>
-            <div class="card"><img src="/photo/activite/frontignan.jpg" alt="" class='parallaximg'></div>
+
             <div class="card">
-                <div class="activite-grid-title"><h2>Isolation thermique par l’exterieur</h2></div>
-                <div class="activite-grid-text"><p>Étude de projets /expertise, point singulier, détails techniques, RGE, cabinet d'architecte / maitre d’œuvre</p></div>
-                <div class="activite-grid-btn">Demander un devis</div>
+              <div class="activite-grid-title">
+                    <h2>Façades</h2>
+              </div>
+              <div class="activite-grid-text">
+                    <p>Ravalement, Décoratif D2/D3, imperméabilisation, enduit épais, ...</p>
+              </div>
+              <a href="contact.php" class="activite-grid-btn">Demander un devis</a>
             </div>
+
             <div class="card">
-                <div class="activite-grid-title"><h2>Traitement de fissures</h2></div>
-                <div class="activite-grid-text"><p>Sinistres et sécheresse, ouverture, piquage, rebouchage</p></div>
-                <div class="activite-grid-btn">Demander un devis</div>
+                <img src="/photo/activite/frontignan.jpg" alt="" class='parallaximg'>
             </div>
-            <div class="card"><img src="/photo/activite/fissures.jpg" alt="" class='parallaximg'></div>
+
+            <div class="card">                
+              <div class="activite-grid-title">
+                    <h2>Isolation thermique par l’exterieur</h2>
+              </div>
+              <div class="activite-grid-text">
+                    <p>Étude de projets /expertise, point singulier, détails techniques, RGE, cabinet d'architecte / maitre d’œuvre</p>
+              </div>
+              <a href="contact.php" class="activite-grid-btn">Demander un devis</a>
+            </div>
+
             <div class="card">
-                <div class="activite-grid-title"><h2>embellissements intérieurs / extérieurs</h2></div>
-                <div class="activite-grid-text"><p>Sinistres, rénovation, peinture, papier peint, plomberie, électricité, revêtement de sol, carrelage et faïence</p></div>
-                <div class="activite-grid-btn">Demander un devis</div>
+              <div class="activite-grid-title">
+                    <h2>Traitement de fissures</h2>
+              </div>
+              <div class="activite-grid-text">
+                    <p>Sinistres et sécheresse, ouverture, piquage, rebouchage</p>
+              </div>
+              <a href="contact.php" class="activite-grid-btn">Demander un devis</a>
             </div>
-            <div class="card"><img src="/photo/activite/deco.jpg" alt="" class='parallaximg'></div>
+
+            <div class="card">
+                <img src="/photo/activite/fissures.jpg" alt="" class='parallaximg'>
+            </div>
+
+            <div class="card">
+              <div class="activite-grid-title">
+                    <h2>embellissements intérieurs / extérieurs</h2>
+              </div>
+              <div class="activite-grid-text">
+                    <p>Sinistres, rénovation, peinture, papier peint, plomberie, électricité, revêtement de sol, carrelage et faïence</p>
+              </div>
+              <a href="contact.php" class="activite-grid-btn">Demander un devis</a>
+            </div>
+
+            <div class="card">
+                <img src="/photo/activite/deco.jpg" alt="" class='parallaximg'>
+            </div>
         </div>
+
     </div>
 
     <div class="transi-contact-main">
@@ -65,8 +98,8 @@
                 <p>Contactez-nous <br>pour obtenir un devis</p>
             </div>
             <div class="transi-contact-btn-container">
-                <div class="transi-contact-btn">mail</div>
-                <div class="transi-contact-btn">contact</div>
+                <a href="mailto:votreadresse@email.com" class="transi-contact-btn">mail</a>
+                <a href="contact.php" class="transi-contact-btn">contact</a>
             </div>
         </div>
     </div>
