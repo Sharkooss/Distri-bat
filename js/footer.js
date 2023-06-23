@@ -49,3 +49,22 @@ menufooterdevis.addEventListener('mouseleave', () => {
     resetOverflow();
   }, 300);
 });
+
+
+window.addEventListener('DOMContentLoaded', function() {
+  var emailAddress = 'distribatsinistres@gmail.com'; // Adresse e-mail
+
+  var mailElement = document.querySelector('.footer-contact-mail');
+
+  // Clic sur l'adresse e-mail
+  mailElement.addEventListener('click', function() {
+    window.location.href = 'mailto:' + emailAddress;
+  });
+});
+
+
+function redirectToCGU() {
+  window.location.href = 'php/CGU.php';
+}
+
+
