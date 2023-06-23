@@ -321,6 +321,10 @@ select{
     width: 100%;
 }
 
+.formphoto{
+    width: 37%;
+}
+
 textarea{
     border-radius: 5px;
     width: 40%;
