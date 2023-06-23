@@ -64,7 +64,14 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 function redirectToCGU() {
-  window.location.href = 'CGU.php';
+  var currentPath = window.location.pathname;
+  
+  if (currentPath.includes('php') || currentPath === '/index.php' || currentPath === '/') {
+    window.location.href = 'php/CGU.php';
+  } else {
+    window.location.href = 'CGU.php';
+  }
 }
+
 
 
