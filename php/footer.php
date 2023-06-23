@@ -9,7 +9,7 @@
                 </div>
                 <div class="footer-contact-description">
                     <div class="footer-contact-tel">
-                        <img src="../photo/logo/phone.svg" alt="" class="tel-img">
+                        <img src="/photo/logo/phone.svg" alt="" class="tel-img">
                         <div class="tel-text">06 70 04 55 76</div>
                     </div>
                     <div class="footer-contact-mail">
