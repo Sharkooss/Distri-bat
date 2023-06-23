@@ -197,13 +197,13 @@
             <div class="separateur"></div>
             <div class="rscontainer">
                 <a href="https://www.instagram.com/distribatsinistres/" target="_blank" class="rslogo" rel="noopener">
-                    <img src="../photo/logo/instagram.svg" alt="">
+                    <img src="../photo/instagram.svg" alt="">
                 </a>
                 <a href="https://www.facebook.com/Distribatsinistres/" target="_blank" class="rslogo" rel="noopener">
-                    <img src="../photo/logo/facebook.svg" alt="" >
+                    <img src="../photo/facebook.svg" alt="" >
                 </a>
                 <a href="https://www.linkedin.com/company/distribatsinistres/" target="_blank" class="rslogo" rel="noopener">
-                    <img src="../photo/logo/linkedin.svg" alt="" >
+                    <img src="../photo/linkedin.svg" alt="" >
                 </a>
             </div>
         </div>
