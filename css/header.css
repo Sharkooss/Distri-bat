@@ -10,6 +10,10 @@ body{
     overflow: hidden;
 }
 
+.blue{
+    font-size: 22px;
+    color: #13a9dd !important;
+}
 
 /* Styles pour la barre de défilement */
 ::-webkit-scrollbar {
@@ -46,9 +50,13 @@ body{
     border-radius: 0 0 50px 50px;    
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    animation: rangedown 1s ease-in-out;
+    justify-content: space-between;    
+    transition: height 1s ease-in-out;
 }
+
+.logo-text {
+    padding: -10px; /* Augmenter la taille de la hitbox avec un padding */
+  }
 
 .nav-logo img {
     transition: all 1s ease-in-out;
@@ -79,29 +87,30 @@ body{
     font-size: 18px;
 }
 
+.nav-menu a:hover{
+    color: #13a9dd;
+    font-size: 22px;
+}
+
 
 .nav-info.scrolled-info {
     height: 50px;
-    animation: range 1s ease-in-out;
+    
 }
 
-@keyframes range {
-    0%{
-        height: 150px;
-    }
-    100%{
-        height: 50px;
-    }
-}
-
-@keyframes rangedown {
-    0%{
-        height: 50px;
-    }
-    100%{
-        height: 150px;
-    }
-}
+.nav-info.animation-enabled {
+    height: 150px;
+  }
+  
+  .nav-info.scrolled-info.animation-enabled {
+    transition: height 1s ease-in-out;
+    height: 50px;
+  }
+  
+  .nav-menu.scrolled-menu {
+    transition: transform 1s ease-in-out;
+    transform: translateY(0);
+  }
 
 .nav-logo img {
     transition: opacity 0.3s ease-in-out; 
