@@ -264,11 +264,73 @@ h1{
 }
 
 .devis{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
     height: 90%;
     width: 80%;
     background: #373B4D;
     border-radius: 30px;
+    color: aliceblue;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-style: italic;
 }
+
+form{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.sendbutton{
+    width: 30%;
+}
+
+.deviscontentcontainer{
+    position: relative;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input{
+    border-radius: 5px;
+    width: 20%;
+    color: #373B4D;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+select{
+    color: #373B4D;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+textarea{
+    border-radius: 5px;
+    width: 40%;
+    height: 35%;
+    color: #373B4D;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+
 
 
 /*============================== RESPONSIVE ==============================*/
@@ -601,6 +663,25 @@ h1{
     .contmom{
         height: 2400px;
     }
+
+    form{
+        font-size: 17px;
+    }
+
+    .devis{
+        font-size: 17px;
+    }
+    input{
+        font-size: 15px;
+    }
+    
+    select{
+        font-size: 15px;
+    }
+    
+    textarea{
+        font-size: 15px;
+    }
     
 }
 
@@ -622,6 +703,11 @@ h1{
 }
 
 @media (max-width: 380px){
+
+    select{
+        font-size: 12px;
+    }
+    
 
     .banniere-titre{
         font-weight: initial;

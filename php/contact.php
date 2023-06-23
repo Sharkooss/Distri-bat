@@ -65,7 +65,78 @@
 
 
         <div class="deviscontainer">
-            <div class="devis"></div>
+
+            <div class="devis">
+
+                <?php
+                    error_reporting(0);
+                    trigger_error("user warning!", E_USER_WARNING);
+
+                    // Vérifier si le formulaire a été soumis
+                    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                        // Récupérer les données du formulaire
+                        $nom = $_POST["nom"];
+                        $prenom = $_POST["prenom"];
+                        $reponse = $_POST["reponse"];
+                        $description = $_POST["description"];
+
+                        
+                        // Valider les données (vous pouvez ajouter des validations supplémentaires si nécessaire)
+                        if (!empty($nom) && !empty($prenom) && !empty($description) && !empty($reponse)) {
+                            // Adresse e-mail où envoyer les résultats
+                            $destinataire = "charliepetre2004@gmail.com";
+                            
+                            // Construire le corps de l'e-mail
+                            $corps_message = "Nom: " . $nom . "\n";
+                            $corps_message .= "Prénom: " . $prenom . "\n";
+                            $corps_message .= "Réponse: " . $reponse . "\n";
+                            $corps_message .= "Description: " . $description;
+                            
+                            // Envoyer l'e-mail
+                            if (mail($destinataire, "Nouveau message de formulaire de contact", $corps_message)) {
+                                echo "Votre message a été envoyé avec succès.";
+                            } else {
+                                echo "Une erreur s'est produite lors de l'envoi de votre message.";
+                            }
+                        } else {
+                            echo "Veuillez remplir tous les champs du formulaire.";
+                        }
+                    }
+                ?>
+                    
+                    <h2>Demande du devis</h2>
+                    
+                    <form method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
+
+                        <div class="deviscontentcontainer">
+                            <label for="nom">Nom :</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+
+                        <div class="deviscontentcontainer">
+                            <label for="prenom">Prénom :</label>
+                            <input type="text" id="prenom" name="prenom" required>
+                        </div>
+
+                        <div class="deviscontentcontainer">
+                            <label for="reponse">Problème :</label>
+                            <select id="reponse" name="reponse" required>
+                                <option value="">Quel type de problème rencontrez-vous</option>
+                                <option value="Oui">Oui</option>
+                                <option value="Non">Non</option>
+                            </select>
+                        </div>
+
+                        <div class="deviscontentcontainer">
+                            <label for="description">Description :</label>
+                            <textarea id="description" name="description" required></textarea>
+                        </div>
+                        
+                        <input class="sendbutton" type="submit" value="Envoyer">
+                    </form>
+
+
+            </div>
         </div>
 
         <div class="cerificationcontainer">
