@@ -1,17 +1,30 @@
 window.addEventListener('DOMContentLoaded', function() {
-        var container = document.querySelector('.container-caroussel');
-        var scrollSpeed = .8; // Vitesse du défilement
-        var currentPosition = 0;
-        
-        setInterval(function() {
-          currentPosition -= scrollSpeed;
-          container.style.backgroundPositionX = currentPosition + 'px';
-          
-          if (currentPosition <= -container.offsetWidth) {
-            currentPosition = 0;
-          }
-        }, 1); // Interval de rafraîchissement de l'animation
-      });
+  var container = document.querySelector('.container-caroussel');
+  var scrollSpeed = .8; // Vitesse du défilement
+  var currentPosition = 0;
+
+  function updateScrollSpeed() {
+    if (window.innerWidth < 701) {
+      scrollSpeed = 0.4; // Réduire la vitesse de défilement pour les écrans plus petits
+    } else {
+      scrollSpeed = 0.8; // Vitesse normale de défilement
+    }
+  }
+
+  updateScrollSpeed(); // Appeler la fonction une fois au chargement de la page
+
+  window.addEventListener('resize', updateScrollSpeed); // Mettre à jour la vitesse de défilement lors du redimensionnement de l'écran
+
+  setInterval(function() {
+    currentPosition -= scrollSpeed;
+    container.style.backgroundPositionX = currentPosition + 'px';
+
+    if (currentPosition <= -container.offsetWidth) {
+      currentPosition = 0;
+    }
+  }, 1); // Interval de rafraîchissement de l'animation
+});
+
 
 window.addEventListener('scroll', function() {
   

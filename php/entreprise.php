@@ -10,7 +10,8 @@
     <script src="\js\script.js" defer></script>
     <script src="\js\header.js"></script>
     <script src="\js\footer.js" defer></script>
-    <title>Document</title>
+    <link rel="icon" href="/photo\Logo\logo-title.jpg">
+    <title>Distri-Bat - Notre Entreprise</title>
 </head>
 <header>
     <?php include 'header.php'; ?>          

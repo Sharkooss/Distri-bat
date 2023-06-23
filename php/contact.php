@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/header.css">
     <script src="\js\header.js"></script>
-    <title>Document</title>
+    <link rel="icon" href="/photo\Logo\logo-title.jpg">
+    <title>Distri-Bat - Contact</title>
 </head>
 
 
@@ -161,9 +162,15 @@
             </div>
             <div class="separateur"></div>
             <div class="rscontainer">
-                <img src="\photo\Logo\instagram.svg" alt="instagram" class="rslogo">
-                <img src="\photo\Logo\facebook.svg" alt="facebook" class="rslogo">
-                <img src="\photo\Logo\linkedin.svg" alt="linkedin" class="rslogo">
+                <a href="https://www.instagram.com/distribatsinistres/" target="_blank" class="rslogo" rel="noopener">
+                    <img src="../photo/logo/instagram.svg" alt="">
+                </a>
+                <a href="https://www.facebook.com/Distribatsinistres/" target="_blank" class="rslogo" rel="noopener">
+                    <img src="../photo/logo/facebook.svg" alt="" >
+                </a>
+                <a href="https://www.linkedin.com/company/distribatsinistres/" target="_blank" class="rslogo" rel="noopener">
+                    <img src="../photo/logo/linkedin.svg" alt="" >
+                </a>
             </div>
         </div>
 
