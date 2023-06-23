@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="\css\CGU.css">
     <link rel="stylesheet" href="\css\header.css">
+    <link rel="stylesheet" href="\css\footer.css">
     <script src="\js\header.js"></script>
     <title>Document</title>
 
@@ -21,12 +22,11 @@
             <div class="nav-acceuil">Acceuil</div>
             <div class="nav-entreprise">L'Entreprise</div>
             <div class="nav-activite">Nos Activités</div>
-            <div class="nav-realisation">Nos Réalisations</div> 
+            <div class="nav-realisation">Nos Réalisations</div>
             <div class="nav-contact">Contact</div>
         </div>
     </div>
 </div>
-
 <div class="banniere-block">
     <div class="banniere-texte">
         <div class="banniere-titre">Mentions légales</div>
@@ -189,6 +189,8 @@
     </div>
 </div>
 </div>
+
+<?php include 'footer.php'; ?>    
     
 </body>
 </html>
