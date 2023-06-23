@@ -104,7 +104,6 @@ body{
   
   .nav-info.scrolled-info.animation-enabled {
     transition: height 0.3s ease-in-out;
-    height: 50px;
   }
   
   .nav-menu.scrolled-menu {
@@ -196,6 +195,11 @@ body{
         height: 150px;
         width: 100%;
     }
+
+    .nav-menu.scrolled-menu{
+        margin: 10px; 
+    }
+
     .nav-info {
       transition: transform 0.5s ease;
     }
