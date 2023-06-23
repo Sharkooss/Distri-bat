@@ -184,7 +184,7 @@
     <div class="centering-contaner-global">
         <div class="gerant-container">
             <div class="gerant-element">
-                <div class="gerant-logo"><img src="/photo/logo/gerantlogo.jpg" alt="image"></div>
+                <div class="gerant-logo"><img src="/photo/gerantlogo.jpg" alt="image"></div>
                 <div class="gerant-quote"><img src="/photo/quote.png" alt=""></div>
                 <div class="gerant-texte-block">
                     <div class="gerant-title"><h2>Le mot du gérant</h2></div>

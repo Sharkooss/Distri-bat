@@ -9,22 +9,22 @@
                 </div>
                 <div class="footer-contact-description">
                     <div class="footer-contact-tel">
-                        <img src="/photo/logo/phone.svg" alt="" class="tel-img">
+                        <img src="/photo/phone.svg" alt="" class="tel-img">
                         <div class="tel-text">06 70 04 55 76</div>
                     </div>
                     <div class="footer-contact-mail">
-                        <img src="../photo/logo/at.svg" alt="" class="tel-img">
+                        <img src="../photo/at.svg" alt="" class="tel-img">
                         <div class="tel-text">distribatsinistres@gmail.com</div>
                     </div>
                     <div class="footer-contact-reseau">
                         <a href="https://www.instagram.com/distribatsinistres/" target="_blank" rel="noopener">
-                          <img src="../photo/logo/instagram.svg" alt="" class="tel-img">
+                          <img src="../photo/instagram.svg" alt="" class="tel-img">
                         </a>
                         <a href="https://www.facebook.com/Distribatsinistres/" target="_blank" rel="noopener">
-                          <img src="../photo/logo/facebook.svg" alt="" class="tel-img">
+                          <img src="../photo/facebook.svg" alt="" class="tel-img">
                         </a>
                         <a href="https://www.linkedin.com/company/distribatsinistres/" target="_blank" rel="noopener">
-                          <img src="../photo/logo/linkedin.svg" alt="" class="tel-img">
+                          <img src="../photo/linkedin.svg" alt="" class="tel-img">
                         </a>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
 
                     <div class="siege-social-top">
                         <div class="siege-social-topleft">
-                            <img src="../photo/logo/home.svg" alt="" class="home-img">
+                            <img src="../photo/home.svg" alt="" class="home-img">
                             <div class="siege-social-txt">
                                 <h2>Siège social</h2>
                                 <p>16 rue des Érables, 34970 Lattes</p>
@@ -58,7 +58,7 @@
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11581.554335626044!2d3.672957164001465!3d43.47336034789388!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6bb6565230a9b%3A0x15ab78633134ae21!2sDISTRI-BAT%20SINISTRES!5e0!3m2!1sfr!2sfr!4v1685949255076!5m2!1sfr!2sfr" style="border:1px solid #373B4D ;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps"></iframe>
                         </div>
                         <div class="siege-social-botright">
-                            <img src="../photo/logo/home.svg" alt="" class="home-img">
+                            <img src="../photo/home.svg" alt="" class="home-img">
                             <div class="siege-social-txt">
                                 <h2>Agence logistique</h2>
                                 <p>304 Av. des Lauriers, 34560 Poussan</p>
@@ -92,24 +92,24 @@
             </div>
             <div class="left-contact">
                 <div class="contact-item">
-                    <img src="../photo/logo/phone.svg" alt="" class="left-tel-img">
+                    <img src="../photo/phone.svg" alt="" class="left-tel-img">
                     <div class="left-tel">06 70 04 55 76</div>
                 </div>
                 <div class="contact-item">
-                    <img src="../photo/logo/at.svg" alt="" class="left-tel-img">
+                    <img src="../photo/at.svg" alt="" class="left-tel-img">
                     <div class="left-mail">distribatsinistres@gmail.com</div>
                 </div>
             </div>
 
             <div class="left-reseau">
               <a href="https://www.instagram.com/distribatsinistres/" target="_blank" rel="noopener">
-                <img src="../photo/logo/instagram.svg" alt="" class="left-tel-img">
+                <img src="../photo/instagram.svg" alt="" class="left-tel-img">
               </a>
               <a href="https://www.facebook.com/Distribatsinistres/" target="_blank" rel="noopener">
-                <img src="../photo/logo/facebook.svg" alt="" class="left-tel-img">
+                <img src="../photo/facebook.svg" alt="" class="left-tel-img">
               </a>
               <a href="https://www.linkedin.com/company/distribatsinistres/" target="_blank" rel="noopener">
-                <img src="../photo/logo/linkedin.svg" alt="" class="left-tel-img">
+                <img src="../photo/linkedin.svg" alt="" class="left-tel-img">
               </a>
             </div>
 
@@ -120,14 +120,14 @@
                 <div class="underline"></div>
             </div>
             <div class="middle-siege">
-                <img src="../photo/logo/homeB.svg" alt="" class="middle-home-img">
+                <img src="../photo/homeB.svg" alt="" class="middle-home-img">
                 <div class="middle-texte">
                     <h2>Siège social</h2>
                     <p>16 rue des Érables, 34970 Lattes</p>
                 </div>
             </div>
             <div class="middle-siege">
-                <img src="../photo/logo/homeB.svg" alt="" class="middle-home-img">
+                <img src="../photo/homeB.svg" alt="" class="middle-home-img">
                 <div class="middle-texte">
                     <h2>Agence logistique</h2>
                     <p>304 Av. des Lauriers, 34560 Poussan</p>
