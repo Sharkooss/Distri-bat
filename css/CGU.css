@@ -8,104 +8,19 @@ body{
 
 /*============================== TETE DE PAGE ==============================*/
 
-.nav-info{
-    position: fixed;
-    width: 100%;
-    height: 150px;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    background-color: #373B4D;
-    border-radius: 0 0 50px 50px;    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    animation: rangedown 1s ease-in-out;
-}
-
-.nav-logo img{
-    transition: all 1s ease-in-out  ;
-    margin: 15px;
-    height: 120px;
-    border-radius: 0 50px 0 50px;
-}
-
-.nav-menu{
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-    width: 60%;
-    height: 50px;
-    margin: 50px;
-    color: aliceblue;
-    font-size: 20px;
-    font-family: 'annapolis';
-}
-
-.nav-info.scrolled-info {
-    height: 50px;
-    animation: range 1s ease-in-out;
-}
-
-@keyframes range {
-    0%{
-        height: 150px;
-    }
-    100%{
-        height: 50px;
-    }
-}
-
-@keyframes rangedown {
-    0%{
-        height: 50px;
-    }
-    100%{
-        height: 150px;
-    }
-}
-
-.nav-logo img {
-    transition: opacity 0.3s ease-in-out; 
-}
-
-.nav-info.scrolled-info .nav-logo img {
-    opacity: 0;
-}
-
-
-.nav-info .logo-text {
-    position: absolute;
-    top: 15px;
-    left: 55px;
-    color: #13a9dd; /* Couleur du texte */
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'annapolis';
-    transform: scale(0);
-    transition: transform 0.5s ease-in-out;
-}
-
-.nav-info.scrolled-info .logo-text {
-    transform: scale(1);
-}
-
-
-
-
 .banniere-texte{
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
-    top: 175px;
-    left: 25%;
-    width: 50%;
+    width: 100%;
+    top: 150px;
     font-size: 50px;
     height: 100px;
     color: aliceblue;
     font-family: 'annapolis';    
+    text-align: center;
 }
 
 .banniere-block{
@@ -117,6 +32,11 @@ body{
 }
 
 /*============================== CGU ==============================*/
+
+.footer-wide{
+    position: relative;
+    top: 400px;
+}
 
 .bgcgucontainer{
     display: flex;
@@ -155,8 +75,8 @@ h3{
     align-items: center;
     color: aliceblue;
     font-family: sans-serif;
-    margin: 50px;
-    padding: 50px;
+    height: 100%;
+    width: 95%;
 }
 
 h4{
@@ -164,7 +84,7 @@ h4{
 }
 
 
-a {
+a{
     color: #13A9DD; /* Couleur du texte */
     text-decoration: underline; /* Soulignement du texte */
   }
@@ -183,6 +103,144 @@ a {
   /* Style des liens actifs (clic) */
   a:active {
     color: #13A9DD; /* Couleur du texte */
-  }
+}
 
 
+
+/*============================== RESPONSIVE ==============================*/
+
+
+@media (max-width: 1700px){
+
+    .bgcgu{
+        height: 4850px;
+    }
+    
+    
+}
+
+
+
+@media (max-width: 1700px){
+
+    .bgcgu{
+        height: 4850px;
+    }
+    
+    
+}
+
+
+@media (max-width: 1600px){
+
+    .bgcgu{
+        height: 5100px;
+    }
+    
+    .banniere-block{
+        height: 5500px;
+    }
+
+}
+
+@media (max-width: 1500px){
+
+    .bgcgu{
+        height: 5500px;
+    }
+    
+    .banniere-block{
+        height: 6000px;
+    }
+
+}
+
+
+@media (max-width: 1350px){
+
+    .bgcgu{
+        height: 6000px;
+    }
+    
+    .banniere-block{
+        height: 6500px;
+    }
+
+}
+
+
+@media (max-width: 1160px){
+
+    .bgcgu{
+        height: 6500px;
+    }
+    
+    .banniere-block{
+        height: 7000px;
+    }
+
+}
+
+@media (max-width: 1050px){
+
+    .bgcgu{
+        height: 7100px;
+    }
+    
+    .banniere-block{
+        height: 7500px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 900px){
+
+    p{
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 780px){
+    
+    p{
+        font-size: 12px;
+    }
+
+    .banniere-texte{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 500px){
+
+    h2{
+        font-family: 'annapolis';    
+        font-size: 23px;
+    }
+    
+    h3{
+        font-family: 'annapolis';    
+        font-size: 15px;
+    }
+    
+    .bgcgu{
+        height: 10500px;
+    }
+    
+    .banniere-block{
+        height: 11000px;
+    }
+}
+
+@media (max-width: 500px){
+    
+    p{
+        font-size: 12px;
+    }
+
+}
