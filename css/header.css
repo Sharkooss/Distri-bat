@@ -104,6 +104,7 @@ body{
   
   .nav-info.scrolled-info.animation-enabled {
     transition: height 0.3s ease-in-out;
+    height: 50px;
   }
   
   .nav-menu.scrolled-menu {
@@ -208,6 +209,10 @@ body{
       transform: translateY(0);
       animation: none;
       display: inherit;
+      height: 150px;
+    }
+    .nav-info.scrolled-info.animation-enabled{
+        height: 150px;
     }
     .nav-menu{
         flex-direction: column;
