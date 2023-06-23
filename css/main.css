@@ -987,6 +987,7 @@ html{
     }
     .responsive-texte{
         opacity: 1;
+        margin-top: 40px;
     }
     .prestation-container{
         height: 800px;
