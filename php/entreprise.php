@@ -141,13 +141,13 @@
             La valeur ajoutée de nos collaborateurs est toujours récompensée. De nombreux avantages et conditions sont de nature à motiver, fédérer et fidéliser nos équipes.</div>
 
 
-            <div class="rejoindrebouton">
+            <a href="contact.php" class="rejoindrebouton">
 
 
                 <div class="rejoindreboutontexte"> N’Hésitez pas a nous contacter !</div>
 
                 
-            </div>
+            </a>
 
         </div>
     </div>
@@ -157,10 +157,10 @@
     
 </div>
 
-
-
  
-
+<div class="footer-wrapper">
+    <?php include 'footer.php'; ?> 
+</div> 
 
 </body>
 
