@@ -318,6 +318,7 @@ select{
     font-size: 22px;
     font-family: sans-serif;
     font-style: italic;
+    width: 100%;
 }
 
 textarea{

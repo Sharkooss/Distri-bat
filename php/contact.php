@@ -122,8 +122,18 @@
                             <label for="reponse">Problème :</label>
                             <select id="reponse" name="reponse" required>
                                 <option value="">Quel type de problème rencontrez-vous</option>
-                                <option value="Oui">Oui</option>
-                                <option value="Non">Non</option>
+                                <option value="">*** FACADES ***</option>
+                                <option value="Traîtement des fissures">Traîtement des fissures</option>
+                                <option value="Ravalement enduits / Imperméabilité">Ravalement enduits / Imperméabilité</option>
+                                <option value="ITE">ITE</option>
+                                <option value="">*** MACONNERIE ***</option>
+                                <option value="Dallage / Trottoirs / Chape">Dallage / Trottoirs / Chape</option>
+                                <option value="Longrines">Longrines</option>
+                                <option value="">*** Peinture et décoration ***</option>
+                                <option value="P.P / Peinture / TDV / Effets matière / Agencement inter / Placo">P.P / Peinture / TDV / Effets matière / Agencement inter / Placo</option>
+                                <option value="">*** Revêtement de sols ***</option>
+                                <option value="Carrelage">Carrelage</option>
+                                <option value="Parquet / Stratifié / PVC">Parquet / Stratifié / PVC</option>
                             </select>
                         </div>
 
