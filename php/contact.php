@@ -90,8 +90,22 @@
                             // Construire le corps de l'e-mail
                             $corps_message = "Nom: " . $nom . "\n";
                             $corps_message .= "Prénom: " . $prenom . "\n";
-                            $corps_message .= "Réponse: " . $reponse . "\n";
-                            $corps_message .= "Description: " . $description;
+                            $corps_message .= "Demande: " . $reponse . "\n";
+                            $corps_message .= "Description: " . $description . "\n";
+
+                            if (isset($_FILES['photo']) && $_FILES['photo']['error'] == UPLOAD_ERR_OK) {
+                                // Chemin temporaire du fichier téléchargé
+                                $chemin_temporaire = $_FILES['photo']['tmp_name'];
+                                
+                                // Lire le contenu du fichier
+                                $contenu_fichier = file_get_contents($chemin_temporaire);
+                                
+                                // Encoder le contenu du fichier en base64
+                                $photo_encodee = base64_encode($contenu_fichier);
+                                
+                                // Ajouter la photo encodée dans le corps de l'e-mail
+                                $corps_message .= "Photo: <img src='data:image/jpeg;base64," . $photo_encodee . "'>";
+                            }
                             
                             // Envoyer l'e-mail
                             if (mail($destinataire, "Nouveau message de formulaire de contact", $corps_message)) {
@@ -103,6 +117,21 @@
                             echo "Veuillez remplir tous les champs du formulaire.";
                         }
                     }
+
+                                if (isset($_FILES['photo']) && $_FILES['photo']['error'] == UPLOAD_ERR_OK) {
+                // Chemin temporaire du fichier téléchargé
+                $chemin_temporaire = $_FILES['photo']['tmp_name'];
+                
+                // Lire le contenu du fichier
+                $contenu_fichier = file_get_contents($chemin_temporaire);
+                
+                // Encoder le contenu du fichier en base64
+                $photo_encodee = base64_encode($contenu_fichier);
+                
+                // Ajouter la photo encodée dans le corps de l'e-mail
+                $corps_message .= "Photo: <img src='data:image/jpeg;base64," . $photo_encodee . "'>";
+            }
+                    
                 ?>
                     
                     <h2>Demande du devis</h2>
@@ -142,6 +171,11 @@
                             <label for="description">Description :</label>
                             <textarea id="description" name="description" required></textarea>
                         </div>
+
+                        <div class="deviscontentcontainer">
+                            <label for="photo">Photo :</label>
+                            <input class="formphoto" type="file" id="photo" name="photo">
+                        </div>
                         
                         <input class="sendbutton" type="submit" value="Envoyer">
                     </form>
@@ -163,13 +197,13 @@
             <div class="separateur"></div>
             <div class="rscontainer">
                 <a href="https://www.instagram.com/distribatsinistres/" target="_blank" class="rslogo" rel="noopener">
-                    <img src="../photo/logo/instagram.svg" alt="">
+                    <img src="../photo/instagram.svg" alt="">
                 </a>
                 <a href="https://www.facebook.com/Distribatsinistres/" target="_blank" class="rslogo" rel="noopener">
-                    <img src="../photo/logo/facebook.svg" alt="" >
+                    <img src="../photo/facebook.svg" alt="" >
                 </a>
                 <a href="https://www.linkedin.com/company/distribatsinistres/" target="_blank" class="rslogo" rel="noopener">
-                    <img src="../photo/logo/linkedin.svg" alt="" >
+                    <img src="../photo/linkedin.svg" alt="" >
                 </a>
             </div>
         </div>
