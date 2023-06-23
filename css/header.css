@@ -51,7 +51,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;    
-    transition: height 1s ease-in-out;
+    transition: height 0.3s ease-in-out;
 }
 
 .logo-text {
@@ -103,12 +103,12 @@ body{
   }
   
   .nav-info.scrolled-info.animation-enabled {
-    transition: height 1s ease-in-out;
+    transition: height 0.3s ease-in-out;
     height: 50px;
   }
   
   .nav-menu.scrolled-menu {
-    transition: transform 1s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     transform: translateY(0);
   }
 
@@ -130,7 +130,7 @@ body{
     font-weight: bold;
     font-family: 'annapolis';
     transform: scale(0);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .nav-info.scrolled-info .logo-text {
