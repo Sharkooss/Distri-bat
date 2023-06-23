@@ -17,9 +17,15 @@
                         <div class="tel-text">distribatsinistres@gmail.com</div>
                     </div>
                     <div class="footer-contact-reseau">
-                        <img src="../photo/logo/instagram.svg" alt="" class="tel-img">
-                        <img src="../photo/logo/facebook.svg" alt="" class="tel-img">
-                        <img src="../photo/logo/linkedin.svg" alt="" class="tel-img">
+                        <a href="https://www.instagram.com/distribatsinistres/" target="_blank" rel="noopener">
+                          <img src="../photo/logo/instagram.svg" alt="" class="tel-img">
+                        </a>
+                        <a href="https://www.facebook.com/Distribatsinistres/" target="_blank" rel="noopener">
+                          <img src="../photo/logo/facebook.svg" alt="" class="tel-img">
+                        </a>
+                        <a href="https://www.linkedin.com/company/distribatsinistres/" target="_blank" rel="noopener">
+                          <img src="../photo/logo/linkedin.svg" alt="" class="tel-img">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -72,8 +78,8 @@
                     <h2>politique de confidentialité</h2>
                     <div class="footer-underline devis-u"></div>
                 </div>
-                <div class="mentions-legales">
-                    <h2>Mentions légales</h2>
+                <div class="right-legales" onclick="redirectToCGU()">
+                  <h2>Mentions légales</h2>
                 </div>
             </div>
         </div>
@@ -96,10 +102,17 @@
             </div>
 
             <div class="left-reseau">
+              <a href="https://www.instagram.com/distribatsinistres/" target="_blank" rel="noopener">
                 <img src="../photo/logo/instagram.svg" alt="" class="left-tel-img">
+              </a>
+              <a href="https://www.facebook.com/Distribatsinistres/" target="_blank" rel="noopener">
                 <img src="../photo/logo/facebook.svg" alt="" class="left-tel-img">
+              </a>
+              <a href="https://www.linkedin.com/company/distribatsinistres/" target="_blank" rel="noopener">
                 <img src="../photo/logo/linkedin.svg" alt="" class="left-tel-img">
+              </a>
             </div>
+
         </div>
         <div class="middle-footer">
             <div class="footer-title-responsive">
@@ -126,8 +139,8 @@
                 <h2>politique de confidentialité</h2>
                 <div class="underline"></div>
             </div>
-            <div class="right-legales">
-                <h2>Mentions légales</h2>
+            <div class="right-legales responsive" onclick="redirectToCGU()">
+              <h2>Mentions légales</h2>
             </div>
         </div>
     </div>

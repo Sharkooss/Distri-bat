@@ -90,12 +90,14 @@
     font-family: 'inter', sans-serif;
     font-size: 23px;
     font-style: italic;
+    cursor: pointer;
 }
 
 .tel-img{
     width: 100px;
     height: 50px;
     opacity: 0;
+    cursor: pointer;
 }
 
 
@@ -344,12 +346,35 @@
 }
 
 .right-legales{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: aliceblue;
     font-family:'inter', sans-serif;
     text-align: center;
-    font-size: 14px;
     font-style: italic;
 
+}
+
+.right-legales h2{
+    cursor: pointer;
+    padding: 10px;
+    width: fit-content;
+    font-size: 1.5rem;
+    transition: font-size 0.3s ease, transform 0.3s ease;
+    
+}
+
+.right-legales h2:hover{
+    font-size: 1.6rem;
+    transform: translateY(-3px);
+}
+
+.right-legales.responsive h2:hover{
+    font-size: 1.6rem;
+    color: #13A9DD;
+    transform: translateY(-3px);
 }
 
 
