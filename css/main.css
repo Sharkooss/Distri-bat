@@ -368,7 +368,8 @@ html{
     width: 40%;
     height: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
+    cursor: pointer;
 }
 
 .button-devis:hover{
@@ -476,6 +477,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
 }
 
 .transi-contact-btn{
@@ -491,6 +493,8 @@ html{
     font-family: "inter", sans-serif;
     font-style: italic;
     font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .transi-contact-btn:hover{
