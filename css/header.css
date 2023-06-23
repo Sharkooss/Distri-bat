@@ -163,6 +163,10 @@ body{
     .blue{
         font-size: initial;
     }
+    .nav-menu a:hover{
+        color: #13a9dd;
+        font-size: initial;
+    }
 }
 
 @media (max-width:1000px) {
