@@ -106,7 +106,7 @@
                 l'extérieur (ITE) <a class="bleu">//</a> Travaux intérieurs (peinture, papier-peint, décoration, carrelage et revêtement de sol) ...
                 </div>
                 <div class="presentation-boutton-devis">
-                    <div class="button-devis">Demander Un Devis</div>
+                    <div class="button-devis" onclick="window.location.href = 'php/contact.php';">Demander Un Devis</div>
                 </div>
             </div>
         </div>
@@ -127,8 +127,8 @@
                     <p>Contactez-nous <br>pour obtenir un devis</p>
                 </div>
                 <div class="transi-contact-btn-block">
-                    <div class="transi-contact-btn">mail</div>
-                    <div class="transi-contact-btn">contact</div>
+                    <a href="mailto:votreadresse@email.com" class="transi-contact-btn">mail</a>
+                    <a href="php/contact.php" class="transi-contact-btn">contact</a>
                 </div>
             </div>
         </div>
