@@ -16,7 +16,7 @@
     <title>Distri-Bat - Acceuil</title>
 </head>
 <header>
-<?php include 'php\header.php'; ?>    
+    <?php include '/php/header.php'; ?>    
 </header>      
 <body>
 
