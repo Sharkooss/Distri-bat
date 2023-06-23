@@ -7,6 +7,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body{
     margin: 0;
     z-index: -1;
@@ -481,6 +488,7 @@ body{
     font-size: 23px;
 }
 
+
 .rejoindrebouton{
     position: relative;
     display: flex;
@@ -492,8 +500,26 @@ body{
     color: aliceblue;
     font-size: 20px;
     border-radius: 10px;
-
+    transition: all 0.3s ease;
+    text-decoration: none;
+    padding: 5px;
 }
+
+
+.rejoindrebouton:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+
+.footer-wrapper {
+    position: relative;
+    bottom: 0;
+    top: 100px;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
 
 /*============================== RESPONSIVE ==============================*/
 
