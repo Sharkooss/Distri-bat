@@ -223,7 +223,7 @@
       <div class="laisser-container">
         <div class="laisser-texte">
           <p>
-            Si vous souhaitez nous faire part de votre expérience, laissez-nous un avis en <span class="bleu">cliquant ici</span> 
+            Si vous souhaitez nous faire part de votre expérience, laissez-nous un avis en <a href="https://www.google.com/search?q=distribat+sinistres&source=lmns&bih=621&biw=360&client=ms-android-asus-tpin&prmd=isvn&safe=strict&hl=fr&sa=X&ved=2ahUKEwj79OTK_9j_AhWMmycCHVYaAoMQ_AUoAHoECAEQAA#lrd=0x12b6bb6565230a9b:0x15ab78633134ae21,3,,,," target="_blank" class="bleu">cliquant ici</a> 
           </p>
         </div>
         <div class="laisser-logo-google">
@@ -246,8 +246,8 @@
                 <p>Contactez-nous <br>pour obtenir un devis</p>
             </div>
             <div class="transi-contact-btn-block">
-                <div class="transi-contact-btn">mail</div>
-                <div class="transi-contact-btn">contact</div>
+              <a href="mailto:votreadresse@email.com" class="transi-contact-btn">mail</a>
+              <a href="contact.php" class="transi-contact-btn">contact</a>
             </div>
         </div>
     </div>
