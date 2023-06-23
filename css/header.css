@@ -159,6 +159,10 @@ body{
     .nav-menu{
         margin: 0;
     }
+    
+    .blue{
+        font-size: initial;
+    }
 }
 
 @media (max-width:1000px) {
