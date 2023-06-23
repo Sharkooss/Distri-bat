@@ -85,7 +85,7 @@
                         // Valider les données (vous pouvez ajouter des validations supplémentaires si nécessaire)
                         if (!empty($nom) && !empty($prenom) && !empty($description) && !empty($reponse)) {
                             // Adresse e-mail où envoyer les résultats
-                            $destinataire = "charliepetre2004@gmail.com";
+                            $destinataire = "distribatsinistres@gmail.com";
                             
                             // Construire le corps de l'e-mail
                             $corps_message = "Nom: " . $nom . "\n";
