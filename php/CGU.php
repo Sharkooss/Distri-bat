@@ -5,33 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="\css\CGU.css">
-    <link rel="stylesheet" href="\css\header.css">
+    <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="\css\footer.css">
-    <script src="\js\header.js"></script>
+    <script src="/js/header.js"></script>
     <title>Document</title>
 
 </head>
 
 <header>
-<div class="nav-main">
-    <div class="nav-info">
-        <div class="nav-logo">
-            <img src="/photo/Logo/logo-complet-blanc.jpg" alt="logo distribat sur fond blanc">
-        </div>
-        <div class="nav-menu">
-            <div class="nav-acceuil">Acceuil</div>
-            <div class="nav-entreprise">L'Entreprise</div>
-            <div class="nav-activite">Nos Activités</div>
-            <div class="nav-realisation">Nos Réalisations</div>
-            <div class="nav-contact">Contact</div>
-        </div>
-    </div>
-</div>
-<div class="banniere-block">
-    <div class="banniere-texte">
-        <div class="banniere-titre">Mentions légales</div>
-    </div>
-</div>
+    <?php include 'header.php'; ?>    
 </header>
 
 <body>
@@ -188,9 +170,7 @@
 
     </div>
 </div>
-</div>
-
-<?php include 'footer.php'; ?>    
+</div>   
     
 </body>
 </html>
