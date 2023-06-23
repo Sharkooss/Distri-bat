@@ -263,6 +263,9 @@ body{
     .card{
         justify-content: space-evenly;
     }
+    .footer-wrapper{
+        height: 600px !important;
+    }
 }
 
 @media(max-width:460px){
@@ -272,6 +275,9 @@ body{
     }
     .activite-grid-text{
         font-size: 14px;
+    }
+    .activite-grid-title h2{
+        font-size: 1rem;
     }
 }
 

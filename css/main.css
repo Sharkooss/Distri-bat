@@ -1158,13 +1158,10 @@ html{
     .container-caroussel{
         height: 150px;
     }
-
-}
-
-@media (max-width:608px){
     .footer-wrapper{
-        height: 550px;
+        height: 600px;
     }
+
 }
 
 @media (max-width:600px){

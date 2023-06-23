@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Distri-Bat Sinistres vous apporte conseils et solutions adaptés dans vos projets: techniques de ravalement, d'imperméabilisation et de rénovation de façades.">
     <link rel="icon" href="/photo\Logo\logo-title.jpg">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
