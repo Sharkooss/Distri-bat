@@ -318,7 +318,7 @@ body{
 	transform: skew(-5deg);
 	background: #373b4d;
     left: 48%;
-    z-index: 100;
+    z-index: 80;
 }
 
 .av-ap-container {
@@ -787,7 +787,7 @@ body{
     }
     .parallelogram{
         height: 250px;
-        z-index: 100;
+        z-index: 90;
     }
     .isolation-title,
     .renovation-title{
