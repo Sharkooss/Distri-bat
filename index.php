@@ -14,7 +14,7 @@
     <script src="js/header.js"></script>
     <script src="\js\footer.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Distri-Bat - Acceuil</title>
+    <title>Distri-Bat - Accueil</title>
 </head>
 <header>
     <?php include "php/header.php"; ?>    
@@ -129,7 +129,7 @@
                     <p>Contactez-nous <br>pour obtenir un devis</p>
                 </div>
                 <div class="transi-contact-btn-block">
-                    <a href="mailto:votreadresse@email.com" class="transi-contact-btn">mail</a>
+                    <a href="mailto:distribatsinistres@email.com" class="transi-contact-btn">mail</a>
                     <a href="php/contact.php" class="transi-contact-btn">contact</a>
                 </div>
             </div>
